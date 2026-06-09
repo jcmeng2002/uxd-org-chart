@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSIG 设计体系四层架构图</title>
+<style>
+  :root {
+    --tencent-blue: #0052D9;
+    --tencent-blue-100: #E6F0FF;
+    --tencent-blue-200: #C0D8FF;
+    --tencent-blue-300: #8FB8FF;
+    --tencent-blue-400: #5A9AFF;
+    --tencent-blue-500: #2671E8;
+    --tencent-blue-600: #0052D9;
+    --tencent-blue-700: #003C99;
+    --tencent-blue-800: #002966;
+    --tencent-blue-900: #001A3D;
+    --bg-white: #FFFFFF;
+    --bg-page: #F5F8FC;
+    --text-primary: #1A1A1A;
+    --text-secondary: #555555;
+    --text-muted: #999999;
+    --border-color: #D0E0F0;
+    --shadow-sm: 0 2px 8px rgba(0,82,217,0.06);
+    --shadow-md: 0 4px 20px rgba(0,82,217,0.10);
+    --shadow-lg: 0 8px 32px rgba(0,82,217,0.14);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "TencentSans", "Microsoft YaHei", sans-serif;
+    background: var(--bg-page);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 0;
+  }
+  .page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 32px 64px;
+  }
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .header .tag {
+    display: inline-block;
+    background: var(--tencent-blue);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--tencent-blue);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+  }
+  .header .subtitle {
+    font-size: 15px;
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+  /* Level section */
+  .level-section {
+    margin-bottom: 36px;
+    position: relative;
+  }
+  .level-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .level-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+  }
+  .level-info h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .level-info p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+  /* Level colors */
+  .l1 .level-badge { background: var(--tencent-blue-700); }
+  .l2 .level-badge { background: var(--tencent-blue-500); }
+  .l3 .level-badge { background: #0D7C5F; }
+  .l4 .level-badge { background: #B8741A; }
+  .l1 { border-left: 4px solid var(--tencent-blue-700); }
+  .l2 { border-left: 4px solid var(--tencent-blue-500); }
+  .l3 { border-left: 4px solid #0D7C5F; }
+  .l4 { border-left: 4px solid #B8741A; }
+  .level-section { padding-left: 20px; }
+  /* Card grid */
+  .card-grid {
+    display: grid;
+    gap: 14px;
+  }
+  .l1 .card-grid { grid-template-columns: 1fr; }
+  .l2 .card-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .l3 .card-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+  .l4 .card-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+  /* Card */
+  .card {
+    background: var(--bg-white);
+    border-radius: var(--radius-md);
+    padding: 18px 20px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+  }
+  .l1 .card::before { background: var(--tencent-blue-700); }
+  .l2 .card::before { background: var(--tencent-blue-500); }
+  .l3 .card::before { background: #0D7C5F; }
+  .l4 .card::before { background: #B8741A; }
+  .card .card-dept {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+  }
+  .card .card-team {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+  }
+  .card .card-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .card .meta-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .l1 .meta-tag { background: #E6F0FF; color: var(--tencent-blue-700); }
+  .l2 .meta-tag { background: #E6F0FF; color: var(--tencent-blue-600); }
+  .l3 .meta-tag { background: #E1F5EE; color: #0D7C5F; }
+  .l4 .meta-tag { background: #FFF5E0; color: #8A5A0A; }
+  /* L1 special */
+  .l1 .card {
+    border-color: var(--tencent-blue-200);
+    padding: 28px 32px;
+    text-align: center;
+  }
+  .l1 .card .card-dept {
+    font-size: 20px;
+    color: var(--tencent-blue-700);
+    margin-bottom: 6px;
+  }
+  .l1 .card .card-team {
+    font-size: 15px;
+    color: var(--tencent-blue-600);
+    margin-bottom: 12px;
+  }
+  .l1 .stat-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 12px;
+  }
+  .l1 .stat-item {
+    background: var(--tencent-blue-100);
+    border-radius: var(--radius-sm);
+    padding: 8px 20px;
+    font-size: 13px;
+    color: var(--tencent-blue-700);
+  }
+  .l1 .stat-item strong {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  /* Connector lines between levels */
+  .connector {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 -20px;
+    padding-left: 20px;
+  }
+  .connector-line {
+    width: 2px;
+    height: 32px;
+    background: var(--tencent-blue-200);
+    position: relative;
+  }
+  .connector-line::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: -3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--tencent-blue-300);
+  }
+  /* Legend */
+  .legend {
+    margin-top: 48px;
+    padding: 24px;
+    background: var(--bg-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow-sm);
+  }
+  .legend h3 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+  }
+  .legend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 12px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .legend-note {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.8;
+  }
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e8e8e8;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  /* Responsive */
+  @media (max-width: 640px) {
+    .page-container { padding: 24px 16px 40px; }
+    .header h1 { font-size: 26px; letter-spacing: 1px; }
+    .l2 .card-grid, .l3 .card-grid, .l4 .card-grid { grid-template-columns: 1fr; }
+    .l1 .stat-row { flex-direction: column; align-items: center; gap: 8px; }
+  }
+</style>
+</head>
+<body>
+<div class="page-container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="tag">CSIG · DESIGN SYSTEM</div>
+    <h1>CSIG 设计体系四层架构图</h1>
+    <p class="subtitle">按设计资源归属与管理层级划分 · 2026</p>
+  </div>
+
+  <!-- L1 -->
+  <div class="level-section l1">
+    <div class="level-header">
+      <div class="level-badge">L1</div>
+      <div class="level-info">
+        <h2>业务线级 — 设计中枢</h2>
+        <p>服务全CSIG业务线的设计部门，提供设计平台能力与专业支撑</p>
+      </div>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-dept">信息平台与服务线</div>
+        <div class="card-team">用户体验设计部（UXD）</div>
+        <div class="card-meta">
+          <span class="meta-tag">77人设计团队</span>
+          <span class="meta-tag">服务全CSIG</span>
+          <span class="meta-tag">设计平台</span>
+        </div>
+        <div class="stat-row">
+          <div class="stat-item"><strong>77</strong> 设计人员</div>
+          <div class="stat-item">覆盖 <strong>全业务线</strong></div>
+          <div class="stat-item"><strong>L1</strong> 最高层级</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><div class="connector-line"></div></div>
+
+  <!-- L2 -->
+  <div class="level-section l2">
+    <div class="level-header">
+      <div class="level-badge">L2</div>
+      <div class="level-info">
+        <h2>部门级 — 独立设计团队</h2>
+        <p>隶属于具体部门的专业设计中心/团队，拥有独立设计编制</p>
+      </div>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-dept">云产品四部</div>
+        <div class="card-team">腾讯云设计一中心 / 二中心</div>
+        <div class="card-meta">
+          <span class="meta-tag">双中心架构</span>
+          <span class="meta-tag">独立编制</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">元宝产品部</div>
+        <div class="card-team">设计中心</div>
+        <div class="card-meta">
+          <span class="meta-tag">独立编制</span>
+          <span class="meta-tag">AI产品</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">地图产品部</div>
+        <div class="card-team">产品体验设计中心</div>
+        <div class="card-meta">
+          <span class="meta-tag">独立编制</span>
+          <span class="meta-tag">地图业务</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><div class="connector-line"></div></div>
+
+  <!-- L3 -->
+  <div class="level-section l3">
+    <div class="level-header">
+      <div class="level-badge">L3</div>
+      <div class="level-info">
+        <h2>嵌入式 — 团队内有设计员工</h2>
+        <p>非独立设计组织，团队内嵌有设计职位的员工</p>
+      </div>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-dept">业务经营管理部 - 磐石研发中心</div>
+        <div class="card-team">前端开发组</div>
+        <div class="card-meta">
+          <span class="meta-tag">1 交互设计</span>
+          <span class="meta-tag">嵌入式</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">营销与交易产品部 - 营销云产品中心</div>
+        <div class="card-team">产品二组</div>
+        <div class="card-meta">
+          <span class="meta-tag">1 产品体验</span>
+          <span class="meta-tag">1 视觉设计</span>
+          <span class="meta-tag">1 交互设计</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">业务经营管理部 - 磐石产品中心</div>
+        <div class="card-team">运营组</div>
+        <div class="card-meta">
+          <span class="meta-tag">1 交互设计</span>
+          <span class="meta-tag">嵌入式</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="connector"><div class="connector-line"></div></div>
+
+  <!-- L4 -->
+  <div class="level-section l4">
+    <div class="level-header">
+      <div class="level-badge">L4</div>
+      <div class="level-info">
+        <h2>指标背负型 — 需承担设计KPI但无设计编制</h2>
+        <p>团队需背负一定设计指标，但内部没有设计员工，依赖外部设计支持</p>
+      </div>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-dept">输入法部 - 产品中心</div>
+        <div class="card-team">产品体验组</div>
+        <div class="card-meta">
+          <span class="meta-tag">无设计员工</span>
+          <span class="meta-tag">背负设计指标</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">社交协作产品部</div>
+        <div class="card-team">X1</div>
+        <div class="card-meta">
+          <span class="meta-tag">无设计员工</span>
+          <span class="meta-tag">背负设计指标</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">安全产品三部</div>
+        <div class="card-team">解决方案中心</div>
+        <div class="card-meta">
+          <span class="meta-tag">无设计员工</span>
+          <span class="meta-tag">背负设计指标</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">云产品一部 - TCS产品中心</div>
+        <div class="card-team">前端开发组</div>
+        <div class="card-meta">
+          <span class="meta-tag">无设计员工</span>
+          <span class="meta-tag">背负设计指标</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">地图平台部 - 智驾图产品架构与交付中心</div>
+        <div class="card-team">智驾云图产品组</div>
+        <div class="card-meta">
+          <span class="meta-tag">无设计员工</span>
+          <span class="meta-tag">背负设计指标</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">地图平台部 - 智驾图产品架构与交付中心</div>
+        <div class="card-team">智驾云图组</div>
+        <div class="card-meta">
+          <span class="meta-tag">无设计员工</span>
+          <span class="meta-tag">背负设计指标</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-dept">CSIG质量部</div>
+        <div class="card-team">工程效能研发中心</div>
+        <div class="card-meta">
+          <span class="meta-tag">仅测开/工程效能</span>
+          <span class="meta-tag">背负设计指标</span>
+        </div>
+      </div>
+      <div class="card" style="border-style: dashed; opacity: 0.7;">
+        <div class="card-dept" style="color: var(--text-muted);">更多团队</div>
+        <div class="card-team">L4 层级可能存在更多未识别团队</div>
+        <div class="card-meta">
+          <span class="meta-tag">待补充</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Legend -->
+  <div class="legend">
+    <h3>图例说明</h3>
+    <div class="legend-grid">
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #003C99;"></div>
+        <span><strong>L1 业务线级</strong> — 服务全业务线的设计中枢</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #2671E8;"></div>
+        <span><strong>L2 部门级</strong> — 部属独立设计中心，专职设计编制</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #0D7C5F;"></div>
+        <span><strong>L3 嵌入式</strong> — 团队内有设计岗位员工</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot" style="background: #B8741A;"></div>
+        <span><strong>L4 指标背负型</strong> — 需承担设计KPI但无设计编制</span>
+      </div>
+    </div>
+    <div class="legend-note">
+      1. L3/L4 团队为当前已识别范围，可能存在遗漏，标注"等"的虚线卡片表示待补充<br>
+      2. 层级关系：L1 集中式中枢 → L2 部门独立编制 → L3 嵌入式设计岗 → L4 无编制但有指标<br>
+      3. 设计资源"独立度"逐层降低，"覆盖面"逐层扩大<br>
+      4. 数据截止 2026年6月，如有更新请以最新组织信息为准
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    CSIG 设计体系架构 · 腾讯蓝风格 · 2026
+  </div>
+
+</div>
+</body>
+</html>
