@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>用户体验设计部 · 组织架构图</title>
+<style>
+  :root {
+    --tencent-blue: #0052D9;
+    --tencent-blue-light: #E6F0FF;
+    --tencent-blue-dark: #003C99;
+    --tencent-blue-hover: #2671E8;
+    --bg-white: #FFFFFF;
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --text-light: #999999;
+    --border-color: #D0E0F0;
+    --shadow-sm: 0 2px 8px rgba(0,82,217,0.08);
+    --shadow-md: 0 4px 16px rgba(0,82,217,0.12);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "Microsoft YaHei", sans-serif;
+    background: linear-gradient(135deg, #f0f5ff 0%, #e8f0fe 50%, #f5f8fc 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--tencent-blue);
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  .header .subtitle {
+    font-size: 15px;
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+  .header .badge {
+    display: inline-block;
+    background: var(--tencent-blue);
+    color: white;
+    padding: 4px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 12px;
+  }
+  .header .total-info {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .header .stat-item {
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+  .header .stat-item strong { color: var(--tencent-blue); font-size: 18px; }
+
+  /* Org Tree */
+  .org-tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Node Base */
+  .org-node {
+    background: var(--bg-white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .org-node:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  /* Level 1 - Dept Head */
+  .level-1 {
+    width: 320px;
+    padding: 28px 32px;
+    border: 2px solid var(--tencent-blue);
+    z-index: 10;
+  }
+  .level-1 .node-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .level-1 .dept-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--tencent-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .level-1 .dept-icon svg { width: 22px; height: 22px; fill: white; }
+  .level-1 .dept-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--tencent-blue);
+  }
+  .level-1 .manager-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    background: var(--tencent-blue-light);
+    border-radius: var(--radius-sm);
+    margin-bottom: 10px;
+  }
+  .level-1 .manager-name { font-weight: 600; font-size: 15px; color: var(--tencent-blue-dark); }
+  .level-1 .manager-title { font-size: 13px; color: var(--text-secondary); }
+  .level-1 .composition {
+    font-size: 12px;
+    color: var(--text-secondary);
+    line-height: 1.8;
+  }
+  .level-1 .tag {
+    display: inline-block;
+    background: #fff;
+    border: 1px solid var(--border-color);
+    padding: 1px 8px;
+    border-radius: 4px;
+    margin: 1px 3px 1px 0;
+    font-size: 11.5px;
+  }
+
+  /* Connector Lines */
+  .connector-v {
+    width: 2px;
+    background: var(--tencent-blue);
+    opacity: 0.35;
+  }
+  .connector-h {
+    height: 2px;
+    background: var(--tencent-blue);
+    opacity: 0.35;
+  }
+
+  /* Level 2 Container */
+  .level-2-container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1600px;
+    margin-top: 0;
+    position: relative;
+  }
+  .level-2-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Vertical connector from L1 to horizontal bar */
+  .l1-to-l2 {
+    width: 2px;
+    height: 36px;
+    background: var(--tencent-blue);
+    opacity: 0.35;
+  }
+  .l2-h-bar {
+    display: none; /* handled differently */
+  }
+
+  /* Level 2 - Centers */
+  .level-2 {
+    width: 260px;
+    padding: 18px 20px;
+    border-left: 4px solid var(--tencent-blue);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    margin-bottom: 8px;
+  }
+  .level-2 .center-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--tencent-blue);
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .level-2 .center-count {
+    background: var(--tencent-blue-light);
+    color: var(--tencent-blue);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .level-2 .director-row {
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    padding: 6px 10px;
+    background: #FAFBFC;
+    border-radius: 6px;
+    margin-bottom: 8px;
+  }
+  .level-2 .director-name { font-weight: 600; color: var(--text-primary); }
+  .level-2 .comp-mini {
+    font-size: 11px;
+    color: var(--text-light);
+    line-height: 1.7;
+  }
+
+  /* Level 3 - Teams */
+  .level-3-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 8px;
+    padding-left: 8px;
+    border-left: 2px solid var(--border-color);
+  }
+  .level-3 {
+    width: 236px;
+    padding: 12px 14px;
+    background: var(--bg-white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    transition: border-color 0.2s;
+  }
+  .level-3:hover { border-color: var(--tencent-blue); }
+  .level-3 .team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+  }
+  .level-3 .team-name {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .level-3 .team-count {
+    background: #F0F5FF;
+    color: var(--tencent-blue);
+    padding: 1px 8px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .level-3 .team-lead {
+    font-size: 11.5px;
+    color: var(--text-secondary);
+    margin-bottom: 5px;
+  }
+  .level-3 .team-lead span { font-weight: 600; color: var(--text-primary); }
+  .level-3 .staff-detail {
+    font-size: 11px;
+    color: var(--text-light);
+    line-height: 1.65;
+    padding: 4px 8px;
+    background: #FAFCFF;
+    border-radius: 4px;
+  }
+
+  /* Staff nodes (HRBP/Secretary) */
+  .staff-row {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .staff-card {
+    background: var(--bg-white);
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 12px 24px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .staff-card .role { color: var(--text-light); font-size: 11.5px; }
+  .staff-card .name { font-weight: 600; color: var(--text-primary); }
+
+  /* Legend */
+  .legend {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 48px;
+    padding: 16px 32px;
+    background: rgba(255,255,255,0.7);
+    border-radius: var(--radius-md);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12.5px;
+    color: var(--text-secondary);
+  }
+  .legend-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+  }
+  .legend-l1 { background: var(--tencent-blue); }
+  .legend-l2 { background: var(--tencent-blue-light); border: 1px solid var(--tencent-blue); }
+  .legend-l3 { background: #F0F5FF; border: 1px solid var(--border-color); }
+
+  /* Responsive */
+  @media (max-width: 1400px) {
+    .level-2-container { gap: 12px; }
+    .level-2 { width: 230px; padding: 14px 16px; }
+    .level-3 { width: 210px; }
+  }
+  @media (max-width: 900px) {
+    body { padding: 20px 12px; }
+    .level-1 { width: 100%; max-width: 360px; }
+    .level-2 { width: 200px; }
+    .level-3 { width: 186px; }
+    .header h1 { font-size: 24px; }
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+    margin-top: 36px;
+    font-size: 12px;
+    color: var(--text-light);
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+  <h1>🏢 用户体验设计部</h1>
+  <div class="subtitle">CDG 广告营销设计中心 · 组织架构图</div>
+  <div class="badge">总编制 77 人</div>
+  <div class="total-info">
+    <div class="stat-item"><strong>18</strong> 产品体验设计</div>
+    <div class="stat-item"><strong>17</strong> 交互设计</div>
+    <div class="stat-item"><strong>27</strong> 视觉设计</div>
+    <div class="stat-item"><strong>8</strong> UI开发</div>
+    <div class="stat-item"><strong>4</strong> 消费互联网营销</div>
+    <div class="stat-item"><strong>3</strong> 其他（多媒体+用研+内容）</div>
+  </div>
+</div>
+
+<!-- Org Chart -->
+<div class="org-tree">
+
+  <!-- ============ LEVEL 1: 部门 ============ -->
+  <div class="org-node level-1">
+    <div class="node-header">
+      <div class="dept-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+      </div>
+      <span class="dept-name">用户体验设计部</span>
+    </div>
+    <div class="manager-row">
+      <span><span class="manager-name">andrawdai 戴永裕</span></span>
+      <span class="manager-title">助理总经理</span>
+    </div>
+    <div class="composition">
+      <span class="tag">产品体验设计 ×18</span>
+      <span class="tag">交互设计 ×17</span>
+      <span class="tag">视觉设计 ×27</span>
+      <span class="tag">UI开发 ×8</span>
+      <span class="tag">多媒体设计 ×1</span>
+      <span class="tag">消费互联网营销 ×4</span>
+      <span class="tag">用研 ×1</span>
+      <span class="tag">内容创作 ×1</span>
+    </div>
+  </div>
+
+  <!-- connector -->
+  <div class="l1-to-l2"></div>
+
+  <!-- ============ LEVEL 2: 各中心/组 ============ -->
+  <div class="level-2-container">
+
+    <!-- ── 1. 产品平台设计中心 ── -->
+    <div class="level-2-wrapper">
+      <div class="org-node level-2">
+        <div class="center-name">
+          产品平台设计中心
+          <span class="center-count">21人</span>
+        </div>
+        <div class="director-row">
+          负责人：<span class="director-name">zhenweizhang 张振伟</span> &nbsp;|&nbsp; 副总监 / 产品体验设计
+        </div>
+        <div class="comp-mini">产品体验×5  交互×6  多媒体×1  视觉×9</div>
+      </div>
+
+      <div class="level-3-list">
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">📐 平台设计组</span>
+            <span class="team-count">4人</span>
+          </div>
+          <div class="team-lead">组长：<span>purplexinli 李昕</span> &nbsp; 交互设计</div>
+          <div class="staff-detail">员工3人：交互×1，视觉×2</div>
+        </div>
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">🖥 桌面设计组</span>
+            <span class="team-count">6人</span>
+          </div>
+          <div class="team-lead">组长：<span>zhenweizhang 张振伟（兼）</span> &nbsp; 兼面设计组副总监</div>
+          <div class="staff-detail">产品体验×1，交互×3，视觉×2</div>
+        </div>
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">📈 增长设计组</span>
+            <span class="team-count">6人</span>
+          </div>
+          <div class="team-lead">组长：<span>zhenweizhang 张振伟（兼）</span> &nbsp; 增长组副总监</div>
+          <div class="staff-detail">产品体验×4，多媒体×1，视觉×1</div>
+        </div>
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">🎮 游戏设计组</span>
+            <span class="team-count">7人</span>
+          </div>
+          <div class="team-lead">组长：<span>zhenweizhang 张振伟（兼）</span> &nbsp; 游戏组副总监</div>
+          <div class="staff-detail">产品体验×2，交互×1，视觉×4</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 2. 搜索与内容设计中心 ── -->
+    <div class="level-2-wrapper">
+      <div class="org-node level-2">
+        <div class="center-name">
+          搜索与内容设计中心
+          <span class="center-count">19人</span>
+        </div>
+        <div class="director-row">
+          负责人：<span class="director-name">serenashen 沈艳慧</span> &nbsp;|&nbsp; 总监 / 交互设计
+        </div>
+        <div class="comp-mini">产品体验×7  交互×4  视觉×8</div>
+      </div>
+
+      <div class="level-3-list">
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">🧽 海绵组</span>
+            <span class="team-count">12人</span>
+          </div>
+          <div class="team-lead">组长：<span>serenashen 沈艳慧</span> &nbsp; 海绵组总监 / 交互设计</div>
+          <div class="staff-detail">员工11人：产品体验×4，交互×1，视觉×6</div>
+        </div>
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">🔍 千寻组</span>
+            <span class="team-count">8人</span>
+          </div>
+          <div class="team-lead">组长：<span>serenashen 沈艳慧</span> &nbsp; 千寻组总监 / 交互设计</div>
+          <div class="staff-detail">员工7人：产品体验×3，交互×2，视觉×2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 3. 工具与商业化设计中心 ── -->
+    <div class="level-2-wrapper">
+      <div class="org-node level-2">
+        <div class="center-name">
+          工具与商业化设计中心
+          <span class="center-count">6人</span>
+        </div>
+        <div class="director-row">
+          负责人：<span class="director-name">karllu 卢锴</span> &nbsp;|&nbsp; 总监 / 视觉设计
+        </div>
+        <div class="comp-mini">产品体验×2  视觉×3  交互×1</div>
+      </div>
+
+      <div class="level-3-list">
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">⚪ 白泽组</span>
+            <span class="team-count">5人</span>
+          </div>
+          <div class="team-lead">组长：<span>karllu 卢锴</span> &nbsp; 白泽组总监 / 视觉设计</div>
+          <div class="staff-detail">员工4人：产品体验×2，视觉×2</div>
+        </div>
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">🍖 饕餮组</span>
+            <span class="team-count">2人</span>
+          </div>
+          <div class="team-lead">组长：<span>karllu 卢锴</span> &nbsp; 饕餮组总监 / 视觉设计</div>
+          <div class="staff-detail">员工1人：交互×1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 4. 技术平台设计中心 ── -->
+    <div class="level-2-wrapper">
+      <div class="org-node level-2">
+        <div class="center-name">
+          技术平台设计中心
+          <span class="center-count">16人</span>
+        </div>
+        <div class="director-row">
+          负责人：<span class="director-name">sylviazou 邹欣</span> &nbsp;|&nbsp; 副总监 / 交互设计
+        </div>
+        <div class="comp-mini">产品体验×3  交互×6  视觉×7</div>
+      </div>
+
+      <div class="level-3-list">
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">✨ 琮光组</span>
+            <span class="team-count">7人</span>
+          </div>
+          <div class="team-lead">组长：<span>sylviazou 邹欣</span> &nbsp; 琮光组副总监 / 交互设计</div>
+          <div class="staff-detail">员工6人：产品体验×1，交互×2，视觉×3</div>
+        </div>
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">💎 浮玉组</span>
+            <span class="team-count">10人</span>
+          </div>
+          <div class="team-lead">组长：<span>sylviazou 邹欣</span> &nbsp; 浮玉组副总监 / 交互设计</div>
+          <div class="staff-detail">员工9人：产品体验×2，交互×3，视觉×4</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 5. 设计研发工作室 ── -->
+    <div class="level-2-wrapper">
+      <div class="org-node level-2">
+        <div class="center-name">
+          设计研发工作室
+          <span class="center-count">9人</span>
+        </div>
+        <div class="director-row">
+          负责人：<span class="director-name">hermanzhang 张仁寿</span> &nbsp;|&nbsp; 组长 / UI开发
+        </div>
+        <div class="comp-mini">UI开发×8  产品体验×1</div>
+      </div>
+      <div class="level-3-list">
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">⚙️ 研发团队</span>
+            <span class="team-count">8人 + 组长</span>
+          </div>
+          <div class="team-lead">负责人：<span>hermanzhang 张仁寿</span> &nbsp; UI开发</div>
+          <div class="staff-detail">员工8人：UI开发×7，产品体验×1</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── 6. 品牌与用研组 ── -->
+    <div class="level-2-wrapper">
+      <div class="org-node level-2">
+        <div class="center-name">
+          品牌与用研组
+          <span class="center-count">7人</span>
+        </div>
+        <div class="director-row">
+          负责人：<span class="director-name">zhenweizhang 张振伟</span> &nbsp;|&nbsp; 副总监 / 产品体验设计
+        </div>
+        <div class="comp-mini">产品体验×1  营销×4  用研×1  内容创作×1</div>
+      </div>
+      <div class="level-3-list">
+        <div class="org-node level-3">
+          <div class="team-header">
+            <span class="team-name">🎨 品牌/用研团队</span>
+            <span class="team-count">6人 + 组长</span>
+          </div>
+          <div class="team-lead">负责人：<span>zhenweizhang 张振伟</span> &nbsp; 产品体验设计</div>
+          <div class="staff-detail">员工6人：消费互联网营销×4，用研×1，内容创作×1</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end level-2-container -->
+
+  <!-- Staff cards -->
+  <div style="width:2px;height:24px;background:var(--tencent-blue);opacity:0.35;margin-top:8px;"></div>
+  <div class="staff-row">
+    <div class="staff-card">
+      <div class="role">HRBP</div>
+      <div class="name">elaineliang 梁婷婷</div>
+    </div>
+    <div class="staff-card">
+      <div class="role">秘书</div>
+      <div class="name">sylviamu 穆思羽</div>
+    </div>
+  </div>
+
+</div><!-- end org-tree -->
+
+<!-- Legend -->
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot legend-l1"></div>一级：部门</div>
+  <div class="legend-item"><div class="legend-dot legend-l2"></div>二级：中心/组</div>
+  <div class="legend-item"><div class="legend-dot legend-l3"></div>三级：设计组/团队</div>
+</div>
+
+<div class="footer">用户体验设计部组织架构图 · 数据来源：部门编制表 · 生成时间 2026-06-09</div>
+
+</body>
+</html>
