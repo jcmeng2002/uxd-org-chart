@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UXD 架构图导航</title>
+<style>
+  :root {
+    --tencent-blue: #0052D9;
+    --tencent-blue-100: #E6F0FF;
+    --tencent-blue-700: #003C99;
+    --bg-page: #F5F8FC;
+    --text-primary: #1A1A1A;
+    --text-secondary: #555555;
+    --text-muted: #999999;
+    --border-color: #D0E0F0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", "TencentSans", "Microsoft YaHei", sans-serif;
+    background: var(--bg-page);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .container {
+    max-width: 680px;
+    width: 100%;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .header .tag {
+    display: inline-block;
+    background: var(--tencent-blue);
+    color: white;
+    padding: 5px 18px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  .header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--tencent-blue);
+    letter-spacing: 2px;
+  }
+  .header p {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 8px;
+  }
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card {
+    display: block;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 24px 28px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,82,217,0.10);
+    border-color: var(--tencent-blue);
+  }
+  .card .card-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--tencent-blue);
+    margin-bottom: 6px;
+  }
+  .card .card-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+  .card .card-arrow {
+    float: right;
+    color: var(--tencent-blue);
+    font-size: 18px;
+    margin-top: -4px;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="tag">UXD · ARCHITECTURE</div>
+    <h1>架构图导航</h1>
+    <p>用户体验设计部组织与设计体系可视化</p>
+  </div>
+  <div class="card-list">
+    <a class="card" href="org-chart.html">
+      <span class="card-arrow">→</span>
+      <div class="card-title">用户体验设计部 · 组织架构图</div>
+      <div class="card-desc">UXD 部门内部组织架构、团队构成与人员分布</div>
+    </a>
+    <a class="card" href="csig-design-arch.html">
+      <span class="card-arrow">→</span>
+      <div class="card-title">CSIG 设计体系 · 四层架构图</div>
+      <div class="card-desc">CSIG 全业务线设计资源归属与管理层级：L1 业务线级 → L2 部门级 → L3 嵌入式 → L4 指标背负型</div>
+    </a>
+  </div>
+  <div class="footer">腾讯蓝风格 · 2026</div>
+</div>
+</body>
+</html>
