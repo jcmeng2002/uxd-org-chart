@@ -28,9 +28,9 @@
 <text x="82" y="112" fill="#003C99" font-size="15" font-weight="700">服务业务线</text>
 <text x="82" y="128" fill="#AAB5C4" font-size="10">服务于业务线的设计部门</text>
 
-<!-- UXD 主名 -->
+<!-- 用户体验设计部主名 -->
 <text x="44" y="152" fill="#1A1A1A" font-size="14" font-weight="700">信息平台与服务线 · 用户体验设计部</text>
-<text x="44" y="167" fill="#C0C8D4" font-size="9">UXD · 77人 · 助理总经理 andrawdai/戴乐标</text>
+<text x="44" y="167" fill="#C0C8D4" font-size="9">77人 · 助理总经理 andrawdai/戴乐标</text>
 
 <!-- 6个组标签横排 -->
 <rect x="44" y="178" width="136" height="24" rx="4" fill="#E6F0FF"/>
