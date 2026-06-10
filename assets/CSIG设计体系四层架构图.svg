@@ -1,259 +1,541 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2100" width="1600" height="2100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 3400" width="1800" height="3400">
 <defs>
   <style>
     text { font-family: 'TencentSans', '腾讯体', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
   </style>
-  <filter id="cardShadow" x="-4%" y="-4%" width="108%" height="116%">
-    <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#0052D9" flood-opacity="0.06"/>
+  <filter id="cs" x="-2%" y="-2%" width="104%" height="108%">
+    <feDropShadow dx="0" dy="2" stdDeviation="5" flood-color="#0052D9" flood-opacity="0.06"/>
+  </filter>
+  <filter id="cslg" x="-2%" y="-2%" width="104%" height="110%">
+    <feDropShadow dx="0" dy="3" stdDeviation="8" flood-color="#0052D9" flood-opacity="0.09"/>
   </filter>
   <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#0052D9"/>
-    <stop offset="100%" stop-color="#2671E8"/>
+    <stop offset="0%" stop-color="#0052D9"/><stop offset="100%" stop-color="#2671E8"/>
   </linearGradient>
-  <linearGradient id="l1Accent" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#0052D9"/>
-    <stop offset="100%" stop-color="#003C99"/>
+  <linearGradient id="l1Bar" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0052D9"/><stop offset="100%" stop-color="#003C99"/>
   </linearGradient>
-  <linearGradient id="l2Accent" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#2671E8"/>
-    <stop offset="100%" stop-color="#0052D9"/>
+  <linearGradient id="l2Bar" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#2671E8"/><stop offset="100%" stop-color="#0052D9"/>
   </linearGradient>
-  <linearGradient id="l3Accent" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#5B9BF0"/>
-    <stop offset="100%" stop-color="#2671E8"/>
+  <linearGradient id="l3Bar" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#5B9BF0"/><stop offset="100%" stop-color="#2671E8"/>
   </linearGradient>
-  <linearGradient id="l4Accent" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#8FB8FF"/>
-    <stop offset="100%" stop-color="#5B9BF0"/>
+  <linearGradient id="l4Bar" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#8FB8FF"/><stop offset="100%" stop-color="#5B9BF0"/>
   </linearGradient>
 </defs>
 
 <!-- Background -->
-<rect width="1600" height="2100" fill="#FAFBFD"/>
+<rect width="1800" height="3400" fill="#F8FAFD"/>
 
-<!-- ==================== TITLE ==================== -->
-<rect x="0" y="0" width="1600" height="130" fill="url(#titleGrad)"/>
-<text x="80" y="62" fill="white" font-size="36" font-weight="700" letter-spacing="2">CSIG 设计体系四层架构图</text>
-<text x="80" y="98" fill="white" font-size="15" font-weight="400" opacity="0.8">按设计资源服务范围划分 · 2026</text>
-<text x="1520" y="62" text-anchor="end" fill="white" font-size="13" font-weight="400" opacity="0.6">CSIG DESIGN SYSTEM</text>
-<text x="1520" y="82" text-anchor="end" fill="white" font-size="13" font-weight="400" opacity="0.6">ARCHITECTURE</text>
+<!-- ========== TITLE ========== -->
+<rect x="0" y="0" width="1800" height="110" fill="url(#titleGrad)"/>
+<text x="64" y="48" fill="white" font-size="30" font-weight="700" letter-spacing="2">CSIG 设计体系四层架构图</text>
+<text x="64" y="78" fill="white" font-size="14" font-weight="400" opacity="0.85">按设计资源服务范围划分 · 信息平台与服务线 · 用户体验设计部 · 2026</text>
+<text x="1736" y="48" text-anchor="end" fill="white" font-size="11" opacity="0.5">CSIG DESIGN SYSTEM ARCHITECTURE</text>
+<!-- Decorative line -->
+<rect x="64" y="94" width="80" height="3" rx="1.5" fill="white" opacity="0.4"/>
 
-<!-- ==================== L1 — 服务业务线 ==================== -->
-<rect x="60" y="160" width="1480" height="240" rx="12" fill="#F0F5FF"/>
+<!-- ========== L1 — 服务业务线 ========== -->
+<rect x="44" y="130" width="1712" height="700" rx="12" fill="#EDF2FA"/>
+<rect x="44" y="130" width="6" height="700" rx="3" fill="url(#l1Bar)"/>
 
-<!-- Left accent bar -->
-<rect x="60" y="160" width="6" height="240" rx="3" fill="url(#l1Accent)"/>
+<!-- Level header -->
+<rect x="72" y="146" width="44" height="44" rx="22" fill="#0052D9"/>
+<text x="94" y="174" text-anchor="middle" fill="white" font-size="17" font-weight="700">L1</text>
+<text x="130" y="166" fill="#003C99" font-size="21" font-weight="700">服务业务线</text>
+<text x="130" y="188" fill="#5A7DA8" font-size="13">服务全CSIG业务线的设计部门</text>
 
-<!-- Level label -->
-<rect x="90" y="176" width="52" height="52" rx="26" fill="#0052D9"/>
-<text x="116" y="200" text-anchor="middle" fill="white" font-size="18" font-weight="700">L1</text>
-<text x="156" y="192" fill="#003C99" font-size="20" font-weight="700">服务业务线</text>
-<text x="156" y="216" fill="#5A7DA8" font-size="14" font-weight="400">服务全CSIG业务线的设计部门</text>
+<!-- L1 Main Card: UXD -->
+<rect x="72" y="206" width="1672" height="604" rx="10" fill="white" filter="url(#cslg)"/>
+<rect x="72" y="206" width="1672" height="5" rx="2.5" fill="url(#l1Bar)"/>
 
-<!-- L1 Card -->
-<rect x="90" y="244" width="1420" height="130" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="90" y="244" width="1420" height="4" rx="2" fill="url(#l1Accent)"/>
+<!-- UXD Header -->
+<rect x="72" y="211" width="1672" height="72" fill="#F6F9FF"/>
+<rect x="100" y="218" width="52" height="36" rx="6" fill="#0052D9" opacity="0.1"/>
+<text x="126" y="242" text-anchor="middle" fill="#0052D9" font-size="13" font-weight="700">UXD</text>
+<text x="168" y="240" fill="#1A1A1A" font-size="22" font-weight="700">信息平台与服务线 · 用户体验设计部</text>
+<text x="168" y="264" fill="#5A7DA8" font-size="13">CSIG 唯一业务线级设计部门 · 77人专业设计团队 · 覆盖全CSIG业务线设计需求</text>
 
-<!-- Department info -->
-<rect x="120" y="268" width="56" height="56" rx="28" fill="#0052D9" opacity="0.1"/>
-<text x="148" y="300" text-anchor="middle" fill="#0052D9" font-size="16" font-weight="700">UXD</text>
+<!-- Stats row -->
+<rect x="100" y="296" width="100" height="30" rx="15" fill="#E6F0FF"/>
+<text x="150" y="316" text-anchor="middle" fill="#0052D9" font-size="13" font-weight="600">77人</text>
+<rect x="212" y="296" width="150" height="30" rx="15" fill="#E6F0FF"/>
+<text x="287" y="316" text-anchor="middle" fill="#0052D9" font-size="13" font-weight="600">覆盖全CSIG业务线</text>
+<rect x="374" y="296" width="130" height="30" rx="15" fill="#E6F0FF"/>
+<text x="439" y="316" text-anchor="middle" fill="#0052D9" font-size="13" font-weight="600">平台级设计能力</text>
+<rect x="516" y="296" width="140" height="30" rx="15" fill="#E6F0FF"/>
+<text x="586" y="316" text-anchor="middle" fill="#0052D9" font-size="13" font-weight="600">设计全栈能力</text>
 
-<text x="196" y="290" fill="#1A1A1A" font-size="22" font-weight="700">信息平台与服务线 · 用户体验设计部</text>
+<!-- Divider -->
+<line x1="100" y1="340" x2="1716" y2="340" stroke="#E4EDF7" stroke-width="1"/>
 
-<!-- Stats pills -->
-<rect x="196" y="310" width="100" height="30" rx="15" fill="#E6F0FF"/>
-<text x="246" y="330" text-anchor="middle" fill="#0052D9" font-size="13" font-weight="600">77人团队</text>
+<!-- UXD 组织架构 label -->
+<text x="100" y="366" fill="#003C99" font-size="15" font-weight="700">组织架构</text>
+<text x="180" y="366" fill="#8FA8C8" font-size="12">Organization Structure</text>
 
-<rect x="308" y="310" width="140" height="30" rx="15" fill="#E6F0FF"/>
-<text x="378" y="330" text-anchor="middle" fill="#0052D9" font-size="13" font-weight="600">覆盖全CSIG业务线</text>
+<!-- Sub-team cards - Row 1 -->
+<rect x="100" y="382" width="380" height="96" rx="8" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="100" y="382" width="4" height="96" rx="2" fill="#0052D9"/>
+<text x="120" y="408" fill="#1A1A1A" font-size="15" font-weight="700">交互设计</text>
+<text x="200" y="408" fill="#0052D9" font-size="11" font-weight="500" opacity="0.7">Interaction Design</text>
+<text x="120" y="430" fill="#666" font-size="12">CSIG全产品线交互设计、原型、信息架构</text>
+<text x="120" y="462" fill="#0052D9" font-size="11" font-weight="500">交互原型 · 信息架构 · 用户流程 · 体验规范</text>
 
-<!-- Right decorative icon area -->
-<circle cx="1430" cy="310" r="28" fill="#0052D9" opacity="0.05"/>
-<text x="1430" y="306" text-anchor="middle" fill="#0052D9" font-size="20" font-weight="700">★</text>
-<text x="1430" y="322" text-anchor="middle" fill="#0052D9" font-size="10" font-weight="500">核心</text>
+<rect x="496" y="382" width="380" height="96" rx="8" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="496" y="382" width="4" height="96" rx="2" fill="#0052D9"/>
+<text x="516" y="408" fill="#1A1A1A" font-size="15" font-weight="700">视觉设计</text>
+<text x="596" y="408" fill="#0052D9" font-size="11" font-weight="500" opacity="0.7">Visual Design</text>
+<text x="516" y="430" fill="#666" font-size="12">CSIG全产品线视觉设计、UI规范、图标系统</text>
+<text x="516" y="462" fill="#0052D9" font-size="11" font-weight="500">UI视觉 · 图标 · 插画 · 动效 · 视觉规范</text>
 
+<rect x="892" y="382" width="380" height="96" rx="8" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="892" y="382" width="4" height="96" rx="2" fill="#0052D9"/>
+<text x="912" y="408" fill="#1A1A1A" font-size="15" font-weight="700">用户研究</text>
+<text x="992" y="408" fill="#0052D9" font-size="11" font-weight="500" opacity="0.7">User Research</text>
+<text x="912" y="430" fill="#666" font-size="12">CSIG用户体验研究、可用性测试、数据分析</text>
+<text x="912" y="462" fill="#0052D9" font-size="11" font-weight="500">用研调研 · 可用性测试 · 数据分析 · 用户画像</text>
 
-<!-- ==================== L2 — 服务部门 ==================== -->
-<rect x="60" y="430" width="1480" height="310" rx="12" fill="#F5F8FF"/>
+<rect x="1288" y="382" width="380" height="96" rx="8" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="1288" y="382" width="4" height="96" rx="2" fill="#0052D9"/>
+<text x="1308" y="408" fill="#1A1A1A" font-size="15" font-weight="700">品牌设计</text>
+<text x="1388" y="408" fill="#0052D9" font-size="11" font-weight="500" opacity="0.7">Brand Design</text>
+<text x="1308" y="430" fill="#666" font-size="12">CSIG品牌规范、营销物料、展会视觉设计</text>
+<text x="1308" y="462" fill="#0052D9" font-size="11" font-weight="500">品牌规范 · 营销物料 · 展会设计 · 品牌策略</text>
 
-<!-- Left accent bar -->
-<rect x="60" y="430" width="6" height="310" rx="3" fill="url(#l2Accent)"/>
+<!-- Sub-team cards - Row 2 -->
+<rect x="100" y="492" width="380" height="96" rx="8" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="100" y="492" width="4" height="96" rx="2" fill="#0052D9"/>
+<text x="120" y="518" fill="#1A1A1A" font-size="15" font-weight="700">前端开发</text>
+<text x="200" y="518" fill="#0052D9" font-size="11" font-weight="500" opacity="0.7">Frontend Dev</text>
+<text x="120" y="540" fill="#666" font-size="12">设计到前端的技术落地、组件库与设计系统</text>
+<text x="120" y="572" fill="#0052D9" font-size="11" font-weight="500">设计系统 · 组件库 · 前端实现 · 技术基建</text>
 
-<!-- Level label -->
-<rect x="90" y="446" width="52" height="52" rx="26" fill="#2671E8"/>
-<text x="116" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="700">L2</text>
-<text x="156" y="462" fill="#185FA5" font-size="20" font-weight="700">服务部门</text>
-<text x="156" y="486" fill="#5A7DA8" font-size="14" font-weight="400">服务于部门的设计中心/团队</text>
+<rect x="496" y="492" width="380" height="96" rx="8" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="496" y="492" width="4" height="96" rx="2" fill="#0052D9"/>
+<text x="516" y="518" fill="#1A1A1A" font-size="15" font-weight="700">3D/动效设计</text>
+<text x="620" y="518" fill="#0052D9" font-size="11" font-weight="500" opacity="0.7">3D/Motion</text>
+<text x="516" y="540" fill="#666" font-size="12">三维建模、动态视觉、Lottie动效、微交互</text>
+<text x="516" y="572" fill="#0052D9" font-size="11" font-weight="500">3D建模 · 动效设计 · Lottie · 微交互</text>
 
-<!-- L2 Card 1 -->
-<rect x="90" y="510" width="460" height="200" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="90" y="510" width="460" height="4" rx="2" fill="url(#l2Accent)"/>
-<text x="120" y="548" fill="#1A1A1A" font-size="20" font-weight="700">腾讯云设计一中心</text>
-<text x="120" y="574" fill="#666" font-size="15" font-weight="400">云产品四部</text>
-<line x1="120" y1="590" x2="520" y2="590" stroke="#EEF2F7" stroke-width="1"/>
-<text x="120" y="614" fill="#2671E8" font-size="13" font-weight="500">服务腾讯云全产品线设计需求</text>
+<rect x="892" y="492" width="380" height="96" rx="8" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="892" y="492" width="4" height="96" rx="2" fill="#0052D9"/>
+<text x="912" y="518" fill="#1A1A1A" font-size="15" font-weight="700">设计运营</text>
+<text x="992" y="518" fill="#0052D9" font-size="11" font-weight="500" opacity="0.7">Design Ops</text>
+<text x="912" y="540" fill="#666" font-size="12">设计流程管理、需求管理、资源协调与质量把控</text>
+<text x="912" y="572" fill="#0052D9" font-size="11" font-weight="500">需求管理 · 资源协调 · 质量把控 · 流程优化</text>
 
-<!-- L2 Card 2 -->
-<rect x="570" y="510" width="460" height="200" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="570" y="510" width="460" height="4" rx="2" fill="url(#l2Accent)"/>
-<text x="600" y="548" fill="#1A1A1A" font-size="20" font-weight="700">腾讯云设计二中心</text>
-<text x="600" y="574" fill="#666" font-size="15" font-weight="400">云产品四部</text>
-<line x1="600" y1="590" x2="1000" y2="590" stroke="#EEF2F7" stroke-width="1"/>
-<text x="600" y="614" fill="#2671E8" font-size="13" font-weight="500">服务腾讯云全产品线设计需求</text>
+<rect x="1288" y="492" width="380" height="96" rx="8" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="1288" y="492" width="4" height="96" rx="2" fill="#0052D9"/>
+<text x="1308" y="518" fill="#1A1A1A" font-size="15" font-weight="700">设计工具/基建</text>
+<text x="1420" y="518" fill="#0052D9" font-size="11" font-weight="500" opacity="0.7">Design Infra</text>
+<text x="1308" y="540" fill="#666" font-size="12">设计规范、设计Token、AI辅助设计工具建设</text>
+<text x="1308" y="572" fill="#0052D9" font-size="11" font-weight="500">设计Token · AI辅助 · 设计平台 · 工具建设</text>
 
-<!-- L2 Card 3 -->
-<rect x="1050" y="510" width="460" height="100" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="1050" y="510" width="460" height="4" rx="2" fill="url(#l2Accent)"/>
-<text x="1080" y="548" fill="#1A1A1A" font-size="20" font-weight="700">设计中心</text>
-<text x="1080" y="574" fill="#666" font-size="15" font-weight="400">元宝产品部</text>
+<!-- Divider -->
+<line x1="100" y1="606" x2="1716" y2="606" stroke="#E4EDF7" stroke-width="1"/>
 
-<!-- L2 Card 4 -->
-<rect x="1050" y="624" width="460" height="86" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="1050" y="624" width="460" height="4" rx="2" fill="url(#l2Accent)"/>
-<text x="1080" y="662" fill="#1A1A1A" font-size="20" font-weight="700">产品体验设计中心</text>
-<text x="1080" y="686" fill="#666" font-size="15" font-weight="400">地图产品部</text>
+<!-- 服务范围 label -->
+<text x="100" y="632" fill="#003C99" font-size="15" font-weight="700">服务范围</text>
+<text x="180" y="632" fill="#8FA8C8" font-size="12">Service Scope</text>
 
-
-<!-- ==================== L3 — 团队内设设计岗位 ==================== -->
-<rect x="60" y="770" width="1480" height="350" rx="12" fill="#F8FAFF"/>
-
-<!-- Left accent bar -->
-<rect x="60" y="770" width="6" height="350" rx="3" fill="url(#l3Accent)"/>
-
-<!-- Level label -->
-<rect x="90" y="786" width="52" height="52" rx="26" fill="#5B9BF0"/>
-<text x="116" y="810" text-anchor="middle" fill="white" font-size="18" font-weight="700">L3</text>
-<text x="156" y="802" fill="#2D5F9E" font-size="20" font-weight="700">团队内设设计岗位</text>
-<text x="156" y="826" fill="#5A7DA8" font-size="14" font-weight="400">团队内有服务于该团队的设计员工</text>
-
-<!-- L3 Card 1 -->
-<rect x="90" y="854" width="460" height="240" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="90" y="854" width="460" height="4" rx="2" fill="url(#l3Accent)"/>
-<text x="120" y="894" fill="#1A1A1A" font-size="18" font-weight="700">磐石研发中心</text>
-<text x="120" y="920" fill="#666" font-size="14" font-weight="400">业务经营管理部 · 前端开发组</text>
-<line x1="120" y1="936" x2="520" y2="936" stroke="#EEF2F7" stroke-width="1"/>
-<rect x="120" y="952" width="120" height="28" rx="14" fill="#EBF3FF"/>
-<text x="180" y="971" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="500">交互设计 ×1</text>
-<rect x="120" y="990" width="160" height="28" rx="14" fill="#EBF3FF"/>
-<text x="200" y="1009" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="500">团队内设计岗位</text>
-
-<!-- L3 Card 2 -->
-<rect x="570" y="854" width="460" height="240" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="570" y="854" width="460" height="4" rx="2" fill="url(#l3Accent)"/>
-<text x="600" y="894" fill="#1A1A1A" font-size="18" font-weight="700">营销云产品中心</text>
-<text x="600" y="920" fill="#666" font-size="14" font-weight="400">营销与交易产品部 · 产品二组</text>
-<line x1="600" y1="936" x2="1000" y2="936" stroke="#EEF2F7" stroke-width="1"/>
-<rect x="600" y="952" width="120" height="28" rx="14" fill="#EBF3FF"/>
-<text x="660" y="971" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="500">产品体验 ×1</text>
-<rect x="732" y="952" width="120" height="28" rx="14" fill="#EBF3FF"/>
-<text x="792" y="971" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="500">视觉设计 ×1</text>
-<rect x="600" y="990" width="120" height="28" rx="14" fill="#EBF3FF"/>
-<text x="660" y="1009" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="500">交互设计 ×1</text>
-<rect x="732" y="990" width="160" height="28" rx="14" fill="#EBF3FF"/>
-<text x="812" y="1009" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="500">团队内设计岗位</text>
-
-<!-- L3 Card 3 -->
-<rect x="1050" y="854" width="460" height="240" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="1050" y="854" width="460" height="4" rx="2" fill="url(#l3Accent)"/>
-<text x="1080" y="894" fill="#1A1A1A" font-size="18" font-weight="700">磐石产品中心</text>
-<text x="1080" y="920" fill="#666" font-size="14" font-weight="400">业务经营管理部 · 运营组</text>
-<line x1="1080" y1="936" x2="1480" y2="936" stroke="#EEF2F7" stroke-width="1"/>
-<rect x="1080" y="952" width="120" height="28" rx="14" fill="#EBF3FF"/>
-<text x="1140" y="971" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="500">交互设计 ×1</text>
-<rect x="1080" y="990" width="160" height="28" rx="14" fill="#EBF3FF"/>
-<text x="1160" y="1009" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="500">团队内设计岗位</text>
-
-
-<!-- ==================== L4 — 背负设计KPI·无设计员工 ==================== -->
-<rect x="60" y="1150" width="1480" height="580" rx="12" fill="#FAFCFF"/>
-
-<!-- Left accent bar -->
-<rect x="60" y="1150" width="6" height="580" rx="3" fill="url(#l4Accent)"/>
-
-<!-- Level label -->
-<rect x="90" y="1166" width="52" height="52" rx="26" fill="#8FB8FF"/>
-<text x="116" y="1190" text-anchor="middle" fill="white" font-size="18" font-weight="700">L4</text>
-<text x="156" y="1182" fill="#3D6B99" font-size="20" font-weight="700">背负设计KPI · 无设计员工</text>
-<text x="156" y="1206" fill="#5A7DA8" font-size="14" font-weight="400">团队需背负一定设计指标，但内部没有设计员工</text>
-
-<!-- L4 Row 1 -->
-<rect x="90" y="1234" width="350" height="120" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="90" y="1234" width="350" height="4" rx="2" fill="url(#l4Accent)"/>
-<text x="120" y="1272" fill="#1A1A1A" font-size="17" font-weight="700">产品中心</text>
-<text x="120" y="1298" fill="#666" font-size="14" font-weight="400">输入法部 · 产品体验组</text>
-<rect x="120" y="1314" width="130" height="26" rx="13" fill="#F0F5FF"/>
-<text x="185" y="1332" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="500">背负设计KPI</text>
-
-<rect x="460" y="1234" width="350" height="120" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="460" y="1234" width="350" height="4" rx="2" fill="url(#l4Accent)"/>
-<text x="490" y="1272" fill="#1A1A1A" font-size="17" font-weight="700">X1</text>
-<text x="490" y="1298" fill="#666" font-size="14" font-weight="400">社交协作产品部</text>
-<rect x="490" y="1314" width="130" height="26" rx="13" fill="#F0F5FF"/>
-<text x="555" y="1332" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="500">背负设计KPI</text>
-
-<rect x="830" y="1234" width="350" height="120" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="830" y="1234" width="350" height="4" rx="2" fill="url(#l4Accent)"/>
-<text x="860" y="1272" fill="#1A1A1A" font-size="17" font-weight="700">解决方案中心</text>
-<text x="860" y="1298" fill="#666" font-size="14" font-weight="400">安全产品三部</text>
-<rect x="860" y="1314" width="130" height="26" rx="13" fill="#F0F5FF"/>
-<text x="925" y="1332" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="500">背负设计KPI</text>
-
-<!-- L4 Row 2 -->
-<rect x="90" y="1374" width="350" height="120" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="90" y="1374" width="350" height="4" rx="2" fill="url(#l4Accent)"/>
-<text x="120" y="1412" fill="#1A1A1A" font-size="17" font-weight="700">TCS产品中心</text>
-<text x="120" y="1438" fill="#666" font-size="14" font-weight="400">云产品一部 · 前端开发组</text>
-<rect x="120" y="1454" width="130" height="26" rx="13" fill="#F0F5FF"/>
-<text x="185" y="1472" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="500">背负设计KPI</text>
-
-<rect x="460" y="1374" width="720" height="120" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="460" y="1374" width="720" height="4" rx="2" fill="url(#l4Accent)"/>
-<text x="490" y="1412" fill="#1A1A1A" font-size="17" font-weight="700">智驾图产品架构与交付中心</text>
-<text x="490" y="1438" fill="#666" font-size="14" font-weight="400">地图平台部 · 智驾云图产品组 / 智驾云图组</text>
-<rect x="490" y="1454" width="130" height="26" rx="13" fill="#F0F5FF"/>
-<text x="555" y="1472" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="500">背负设计KPI</text>
-
-<!-- L4 Row 3 -->
-<rect x="90" y="1514" width="440" height="120" rx="10" fill="white" filter="url(#cardShadow)"/>
-<rect x="90" y="1514" width="440" height="4" rx="2" fill="url(#l4Accent)"/>
-<text x="120" y="1552" fill="#1A1A1A" font-size="17" font-weight="700">工程效能研发中心</text>
-<text x="120" y="1578" fill="#666" font-size="14" font-weight="400">CSIG质量部</text>
-<rect x="120" y="1594" width="130" height="26" rx="13" fill="#F0F5FF"/>
-<text x="185" y="1612" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="500">背负设计KPI</text>
-
-<!-- "等" placeholder -->
-<rect x="550" y="1514" width="340" height="120" rx="10" fill="none" stroke="#8FB8FF" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
-<text x="720" y="1570" text-anchor="middle" fill="#8FB8FF" font-size="18" font-weight="500">更多团队 ……</text>
-<text x="720" y="1596" text-anchor="middle" fill="#B0C8E8" font-size="13" font-weight="400">L4层级可能存在更多未识别团队</text>
+<!-- Service scope pills -->
+<rect x="100" y="646" width="200" height="30" rx="15" fill="#E6F0FF"/>
+<text x="200" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">腾讯云全线产品</text>
+<rect x="312" y="646" width="160" height="30" rx="15" fill="#E6F0FF"/>
+<text x="392" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">元宝/AI产品</text>
+<rect x="484" y="646" width="160" height="30" rx="15" fill="#E6F0FF"/>
+<text x="564" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">地图/出行</text>
+<rect x="656" y="646" width="140" height="30" rx="15" fill="#E6F0FF"/>
+<text x="726" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">安全产品</text>
+<rect x="808" y="646" width="150" height="30" rx="15" fill="#E6F0FF"/>
+<text x="883" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">输入法/社交</text>
+<rect x="970" y="646" width="150" height="30" rx="15" fill="#E6F0FF"/>
+<text x="1045" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">营销/交易</text>
+<rect x="1132" y="646" width="140" height="30" rx="15" fill="#E6F0FF"/>
+<text x="1202" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">质量/工程</text>
+<rect x="1284" y="646" width="140" height="30" rx="15" fill="#E6F0FF"/>
+<text x="1354" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">智驾/图产品</text>
+<rect x="1436" y="646" width="160" height="30" rx="15" fill="#E6F0FF"/>
+<text x="1516" y="666" text-anchor="middle" fill="#0052D9" font-size="12" font-weight="500">其他CSIG业务</text>
 
 
-<!-- ==================== LEGEND ==================== -->
-<rect x="60" y="1760" width="1480" height="140" rx="12" fill="white" filter="url(#cardShadow)"/>
+<!-- ========== L2 — 服务部门 ========== -->
+<rect x="44" y="854" width="1712" height="850" rx="12" fill="#F1F5FC"/>
+<rect x="44" y="854" width="6" height="850" rx="3" fill="url(#l2Bar)"/>
 
-<text x="100" y="1796" fill="#1A1A1A" font-size="16" font-weight="700">图例说明</text>
-<line x1="100" y1="1810" x2="1500" y2="1810" stroke="#EEF2F7" stroke-width="1"/>
+<rect x="72" y="870" width="44" height="44" rx="22" fill="#2671E8"/>
+<text x="94" y="898" text-anchor="middle" fill="white" font-size="17" font-weight="700">L2</text>
+<text x="130" y="890" fill="#185FA5" font-size="21" font-weight="700">服务部门</text>
+<text x="130" y="912" fill="#5A7DA8" font-size="13">服务于部门的设计中心/团队</text>
 
-<!-- Legend row 1 -->
-<rect x="100" y="1826" width="20" height="20" rx="4" fill="#0052D9"/>
-<text x="130" y="1842" fill="#333" font-size="14" font-weight="500">L1 服务业务线</text>
-<text x="280" y="1842" fill="#888" font-size="13">— 服务全CSIG业务线的设计部门</text>
+<!-- L2 Card 1: 腾讯云设计一中心 -->
+<rect x="72" y="930" width="834" height="370" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="72" y="930" width="834" height="5" rx="2.5" fill="url(#l2Bar)"/>
 
-<rect x="640" y="1826" width="20" height="20" rx="4" fill="#2671E8"/>
-<text x="670" y="1842" fill="#333" font-size="14" font-weight="500">L2 服务部门</text>
-<text x="800" y="1842" fill="#888" font-size="13">— 服务于部门的设计中心/团队</text>
+<rect x="72" y="935" width="834" height="60" fill="#F6F9FF"/>
+<rect x="96" y="942" width="46" height="34" rx="6" fill="#2671E8" opacity="0.1"/>
+<text x="119" y="964" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="700">一中心</text>
+<text x="156" y="958" fill="#1A1A1A" font-size="19" font-weight="700">腾讯云设计一中心</text>
+<text x="156" y="980" fill="#5A7DA8" font-size="12">云产品四部 · 服务腾讯云产品线</text>
 
-<!-- Legend row 2 -->
-<rect x="100" y="1858" width="20" height="20" rx="4" fill="#5B9BF0"/>
-<text x="130" y="1874" fill="#333" font-size="14" font-weight="500">L3 团队内设设计岗位</text>
-<text x="340" y="1874" fill="#888" font-size="13">— 团队内有服务于该团队的设计员工</text>
+<!-- 一中心 detail -->
+<line x1="96" y1="1002" x2="882" y2="1002" stroke="#E4EDF7" stroke-width="1"/>
+<text x="96" y="1026" fill="#185FA5" font-size="13" font-weight="700">组织架构</text>
 
-<rect x="640" y="1858" width="20" height="20" rx="4" fill="#8FB8FF"/>
-<text x="670" y="1874" fill="#333" font-size="14" font-weight="500">L4 背负设计KPI</text>
-<text x="830" y="1874" fill="#888" font-size="13">— 需承担设计指标但无设计员工</text>
+<rect x="96" y="1040" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="96" y="1040" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="114" y="1062" fill="#1A1A1A" font-size="13" font-weight="600">交互设计组</text>
+<text x="114" y="1082" fill="#666" font-size="11">腾讯云产品交互设计、原型、体验优化</text>
+<text x="114" y="1098" fill="#2671E8" font-size="10" font-weight="500">原型设计 · 交互规范 · 体验优化</text>
 
-<!-- Note -->
-<text x="100" y="1910" fill="#AAA" font-size="12" font-weight="400">* L3/L4 为当前已识别范围，可能存在遗漏 · 数据截止 2026年6月</text>
+<rect x="480" y="1040" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="480" y="1040" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="498" y="1062" fill="#1A1A1A" font-size="13" font-weight="600">视觉设计组</text>
+<text x="498" y="1082" fill="#666" font-size="11">腾讯云产品视觉设计、UI规范、图标系统</text>
+<text x="498" y="1098" fill="#2671E8" font-size="10" font-weight="500">UI设计 · 视觉规范 · 图标系统</text>
 
-<!-- ==================== FOOTER ==================== -->
-<rect x="0" y="2080" width="1600" height="20" fill="url(#titleGrad)" opacity="0.15"/>
+<rect x="96" y="1118" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="96" y="1118" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="114" y="1140" fill="#1A1A1A" font-size="13" font-weight="600">前端开发组</text>
+<text x="114" y="1160" fill="#666" font-size="11">设计前端技术实现、组件库、设计落地</text>
+<text x="114" y="1176" fill="#2671E8" font-size="10" font-weight="500">组件库 · 页面开发 · 设计落地</text>
+
+<rect x="480" y="1118" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="480" y="1118" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="498" y="1140" fill="#1A1A1A" font-size="13" font-weight="600">用户研究组</text>
+<text x="498" y="1160" fill="#666" font-size="11">腾讯云产品用户研究、可用性测试</text>
+<text x="498" y="1176" fill="#2671E8" font-size="10" font-weight="500">用研调研 · 可用性测试 · 数据洞察</text>
+
+<!-- 一中心 Service scope -->
+<line x1="96" y1="1198" x2="882" y2="1198" stroke="#E4EDF7" stroke-width="1"/>
+<text x="96" y="1222" fill="#185FA5" font-size="13" font-weight="700">服务范围</text>
+<rect x="96" y="1234" width="140" height="26" rx="13" fill="#EBF3FF"/>
+<text x="166" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">云服务器CVM</text>
+<rect x="248" y="1234" width="120" height="26" rx="13" fill="#EBF3FF"/>
+<text x="308" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">云数据库</text>
+<rect x="380" y="1234" width="120" height="26" rx="13" fill="#EBF3FF"/>
+<text x="440" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">云存储COS</text>
+<rect x="512" y="1234" width="130" height="26" rx="13" fill="#EBF3FF"/>
+<text x="577" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">控制台/官网</text>
+<rect x="654" y="1234" width="110" height="26" rx="13" fill="#EBF3FF"/>
+<text x="709" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">API平台</text>
+
+<!-- L2 Card 2: 腾讯云设计二中心 -->
+<rect x="924" y="930" width="834" height="370" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="924" y="930" width="834" height="5" rx="2.5" fill="url(#l2Bar)"/>
+
+<rect x="924" y="935" width="834" height="60" fill="#F6F9FF"/>
+<rect x="948" y="942" width="46" height="34" rx="6" fill="#2671E8" opacity="0.1"/>
+<text x="971" y="964" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="700">二中心</text>
+<text x="1008" y="958" fill="#1A1A1A" font-size="19" font-weight="700">腾讯云设计二中心</text>
+<text x="1008" y="980" fill="#5A7DA8" font-size="12">云产品四部 · 服务腾讯云产品线</text>
+
+<line x1="948" y1="1002" x2="1734" y2="1002" stroke="#E4EDF7" stroke-width="1"/>
+<text x="948" y="1026" fill="#185FA5" font-size="13" font-weight="700">组织架构</text>
+
+<rect x="948" y="1040" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="948" y="1040" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="966" y="1062" fill="#1A1A1A" font-size="13" font-weight="600">交互设计组</text>
+<text x="966" y="1082" fill="#666" font-size="11">腾讯云产品交互设计、原型、体验优化</text>
+<text x="966" y="1098" fill="#2671E8" font-size="10" font-weight="500">原型设计 · 交互规范 · 体验优化</text>
+
+<rect x="1332" y="1040" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="1332" y="1040" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="1350" y="1062" fill="#1A1A1A" font-size="13" font-weight="600">视觉设计组</text>
+<text x="1350" y="1082" fill="#666" font-size="11">腾讯云产品视觉设计、UI规范、图标系统</text>
+<text x="1350" y="1098" fill="#2671E8" font-size="10" font-weight="500">UI设计 · 视觉规范 · 图标系统</text>
+
+<rect x="948" y="1118" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="948" y="1118" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="966" y="1140" fill="#1A1A1A" font-size="13" font-weight="600">前端开发组</text>
+<text x="966" y="1160" fill="#666" font-size="11">设计前端技术实现、组件库、设计落地</text>
+<text x="966" y="1176" fill="#2671E8" font-size="10" font-weight="500">组件库 · 页面开发 · 设计落地</text>
+
+<rect x="1332" y="1118" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="1332" y="1118" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="1350" y="1140" fill="#1A1A1A" font-size="13" font-weight="600">用户研究组</text>
+<text x="1350" y="1160" fill="#666" font-size="11">腾讯云产品用户研究、可用性测试</text>
+<text x="1350" y="1176" fill="#2671E8" font-size="10" font-weight="500">用研调研 · 可用性测试 · 数据洞察</text>
+
+<line x1="948" y1="1198" x2="1734" y2="1198" stroke="#E4EDF7" stroke-width="1"/>
+<text x="948" y="1222" fill="#185FA5" font-size="13" font-weight="700">服务范围</text>
+<rect x="948" y="1234" width="130" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1013" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">云安全产品</text>
+<rect x="1090" y="1234" width="130" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1155" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">云监控/运维</text>
+<rect x="1232" y="1234" width="140" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1302" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">AI/大数据平台</text>
+<rect x="1384" y="1234" width="140" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1454" y="1252" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">行业解决方案</text>
+
+<!-- L2 Card 3: 元宝产品部-设计中心 -->
+<rect x="72" y="1318" width="834" height="360" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="72" y="1318" width="834" height="5" rx="2.5" fill="url(#l2Bar)"/>
+
+<rect x="72" y="1323" width="834" height="60" fill="#F6F9FF"/>
+<rect x="96" y="1330" width="46" height="34" rx="6" fill="#2671E8" opacity="0.1"/>
+<text x="119" y="1352" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="700">AI</text>
+<text x="156" y="1346" fill="#1A1A1A" font-size="19" font-weight="700">设计中心</text>
+<text x="156" y="1368" fill="#5A7DA8" font-size="12">元宝产品部 · 服务AI产品线</text>
+
+<line x1="96" y1="1390" x2="882" y2="1390" stroke="#E4EDF7" stroke-width="1"/>
+<text x="96" y="1414" fill="#185FA5" font-size="13" font-weight="700">组织架构</text>
+
+<rect x="96" y="1428" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="96" y="1428" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="114" y="1450" fill="#1A1A1A" font-size="13" font-weight="600">AI产品设计组</text>
+<text x="114" y="1470" fill="#666" font-size="11">元宝/AI产品交互与视觉设计</text>
+<text x="114" y="1486" fill="#2671E8" font-size="10" font-weight="500">AI对话 · 智能助手 · AIGC产品</text>
+
+<rect x="480" y="1428" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="480" y="1428" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="498" y="1450" fill="#1A1A1A" font-size="13" font-weight="600">AI体验研究组</text>
+<text x="498" y="1470" fill="#666" font-size="11">AI产品用户体验研究与优化</text>
+<text x="498" y="1486" fill="#2671E8" font-size="10" font-weight="500">体验评估 · 用户反馈 · 数据洞察</text>
+
+<rect x="96" y="1506" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="96" y="1506" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="114" y="1528" fill="#1A1A1A" font-size="13" font-weight="600">前端开发组</text>
+<text x="114" y="1548" fill="#666" font-size="11">AI产品设计前端技术实现</text>
+<text x="114" y="1564" fill="#2671E8" font-size="10" font-weight="500">组件库 · 页面开发 · 设计落地</text>
+
+<rect x="480" y="1506" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="480" y="1506" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="498" y="1528" fill="#1A1A1A" font-size="13" font-weight="600">品牌/视觉组</text>
+<text x="498" y="1548" fill="#666" font-size="11">元宝品牌视觉与营销设计</text>
+<text x="498" y="1564" fill="#2671E8" font-size="10" font-weight="500">品牌设计 · 营销物料 · IP形象</text>
+
+<line x1="96" y1="1586" x2="882" y2="1586" stroke="#E4EDF7" stroke-width="1"/>
+<text x="96" y="1610" fill="#185FA5" font-size="13" font-weight="700">服务范围</text>
+<rect x="96" y="1622" width="120" height="26" rx="13" fill="#EBF3FF"/>
+<text x="156" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">腾讯元宝</text>
+<rect x="228" y="1622" width="140" height="26" rx="13" fill="#EBF3FF"/>
+<text x="298" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">AI对话产品</text>
+<rect x="380" y="1622" width="140" height="26" rx="13" fill="#EBF3FF"/>
+<text x="450" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">AIGC平台</text>
+<rect x="532" y="1622" width="140" height="26" rx="13" fill="#EBF3FF"/>
+<text x="602" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">智能助手</text>
+<rect x="684" y="1622" width="130" height="26" rx="13" fill="#EBF3FF"/>
+<text x="749" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">AI办公</text>
+
+<!-- L2 Card 4: 地图产品部-产品体验设计中心 -->
+<rect x="924" y="1318" width="834" height="360" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="924" y="1318" width="834" height="5" rx="2.5" fill="url(#l2Bar)"/>
+
+<rect x="924" y="1323" width="834" height="60" fill="#F6F9FF"/>
+<rect x="948" y="1330" width="46" height="34" rx="6" fill="#2671E8" opacity="0.1"/>
+<text x="971" y="1352" text-anchor="middle" fill="#2671E8" font-size="13" font-weight="700">MAP</text>
+<text x="1008" y="1346" fill="#1A1A1A" font-size="19" font-weight="700">产品体验设计中心</text>
+<text x="1008" y="1368" fill="#5A7DA8" font-size="12">地图产品部 · 服务地图/出行产品线</text>
+
+<line x1="948" y1="1390" x2="1734" y2="1390" stroke="#E4EDF7" stroke-width="1"/>
+<text x="948" y="1414" fill="#185FA5" font-size="13" font-weight="700">组织架构</text>
+
+<rect x="948" y="1428" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="948" y="1428" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="966" y="1450" fill="#1A1A1A" font-size="13" font-weight="600">地图交互设计组</text>
+<text x="966" y="1470" fill="#666" font-size="11">地图导航产品交互设计</text>
+<text x="966" y="1486" fill="#2671E8" font-size="10" font-weight="500">导航交互 · 路线规划 · 位置服务</text>
+
+<rect x="1332" y="1428" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="1332" y="1428" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="1350" y="1450" fill="#1A1A1A" font-size="13" font-weight="600">地图视觉设计组</text>
+<text x="1350" y="1470" fill="#666" font-size="11">地图导航产品视觉设计</text>
+<text x="1350" y="1486" fill="#2671E8" font-size="10" font-weight="500">地图UI · 图标 · 配色 · 视觉规范</text>
+
+<rect x="948" y="1506" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="948" y="1506" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="966" y="1528" fill="#1A1A1A" font-size="13" font-weight="600">出行体验设计组</text>
+<text x="966" y="1548" fill="#666" font-size="11">出行/打车/交通产品体验设计</text>
+<text x="966" y="1564" fill="#2671E8" font-size="10" font-weight="500">出行体验 · 打车 · 公交地铁</text>
+
+<rect x="1332" y="1506" width="370" height="66" rx="6" fill="#F7FAFF" stroke="#D6E4F5" stroke-width="1"/>
+<rect x="1332" y="1506" width="3" height="66" rx="1.5" fill="#2671E8"/>
+<text x="1350" y="1528" fill="#1A1A1A" font-size="13" font-weight="600">前端开发组</text>
+<text x="1350" y="1548" fill="#666" font-size="11">地图产品设计前端技术实现</text>
+<text x="1350" y="1564" fill="#2671E8" font-size="10" font-weight="500">组件库 · 页面开发 · 设计落地</text>
+
+<line x1="948" y1="1586" x2="1734" y2="1586" stroke="#E4EDF7" stroke-width="1"/>
+<text x="948" y="1610" fill="#185FA5" font-size="13" font-weight="700">服务范围</text>
+<rect x="948" y="1622" width="120" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1008" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">腾讯地图</text>
+<rect x="1080" y="1622" width="120" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1140" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">导航产品</text>
+<rect x="1212" y="1622" width="140" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1282" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">出行服务</text>
+<rect x="1364" y="1622" width="120" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1424" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">位置服务</text>
+<rect x="1496" y="1622" width="130" height="26" rx="13" fill="#EBF3FF"/>
+<text x="1561" y="1640" text-anchor="middle" fill="#2671E8" font-size="11" font-weight="500">智驾/车联</text>
+
+
+<!-- ========== L3 — 团队内设设计岗位 ========== -->
+<rect x="44" y="1728" width="1712" height="460" rx="12" fill="#F3F6FB"/>
+<rect x="44" y="1728" width="6" height="460" rx="3" fill="url(#l3Bar)"/>
+
+<rect x="72" y="1744" width="44" height="44" rx="22" fill="#5B9BF0"/>
+<text x="94" y="1772" text-anchor="middle" fill="white" font-size="17" font-weight="700">L3</text>
+<text x="130" y="1764" fill="#2D6BC4" font-size="21" font-weight="700">团队内设设计岗位</text>
+<text x="130" y="1786" fill="#5A7DA8" font-size="13">团队内有服务于该团队的设计员工</text>
+
+<!-- L3 Cards -->
+<!-- Card 1 -->
+<rect x="72" y="1806" width="554" height="120" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="72" y="1806" width="554" height="4" rx="2" fill="url(#l3Bar)"/>
+<rect x="96" y="1820" width="50" height="36" rx="6" fill="#5B9BF0" opacity="0.1"/>
+<text x="121" y="1843" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="700">磐石</text>
+<text x="160" y="1838" fill="#1A1A1A" font-size="16" font-weight="700">前端开发组</text>
+<text x="160" y="1860" fill="#5A7DA8" font-size="12">业务经营管理部 · 磐石研发中心</text>
+<line x1="96" y1="1876" x2="602" y2="1876" stroke="#E4EDF7" stroke-width="1"/>
+<text x="96" y="1898" fill="#666" font-size="12">团队内设有设计职位员工，服务于磐石研发中心前端开发</text>
+<text x="96" y="1918" fill="#5B9BF0" font-size="11" font-weight="500">前端开发 · 设计落地 · 体验优化</text>
+
+<!-- Card 2 -->
+<rect x="642" y="1806" width="554" height="120" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="642" y="1806" width="554" height="4" rx="2" fill="url(#l3Bar)"/>
+<rect x="666" y="1820" width="50" height="36" rx="6" fill="#5B9BF0" opacity="0.1"/>
+<text x="691" y="1843" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="700">营销</text>
+<text x="730" y="1838" fill="#1A1A1A" font-size="16" font-weight="700">产品二组</text>
+<text x="730" y="1860" fill="#5A7DA8" font-size="12">营销与交易产品部 · 营销云产品中心</text>
+<line x1="666" y1="1876" x2="1172" y2="1876" stroke="#E4EDF7" stroke-width="1"/>
+<text x="666" y="1898" fill="#666" font-size="12">团队内设有设计职位员工，服务于营销云产品中心</text>
+<text x="666" y="1918" fill="#5B9BF0" font-size="11" font-weight="500">营销设计 · 产品体验 · 交互优化</text>
+
+<!-- Card 3 -->
+<rect x="1212" y="1806" width="554" height="120" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="1212" y="1806" width="554" height="4" rx="2" fill="url(#l3Bar)"/>
+<rect x="1236" y="1820" width="50" height="36" rx="6" fill="#5B9BF0" opacity="0.1"/>
+<text x="1261" y="1843" text-anchor="middle" fill="#5B9BF0" font-size="12" font-weight="700">磐石</text>
+<text x="1300" y="1838" fill="#1A1A1A" font-size="16" font-weight="700">磐石产品中心</text>
+<text x="1300" y="1860" fill="#5A7DA8" font-size="12">业务经营管理部 · 磐石产品中心</text>
+<line x1="1236" y1="1876" x2="1742" y2="1876" stroke="#E4EDF7" stroke-width="1"/>
+<text x="1236" y="1898" fill="#666" font-size="12">团队内设有设计职位员工，服务于磐石产品中心</text>
+<text x="1236" y="1918" fill="#5B9BF0" font-size="11" font-weight="500">产品设计 · 体验优化 · 需求分析</text>
+
+<!-- L3 等 placeholder -->
+<rect x="72" y="1944" width="1694" height="48" rx="8" fill="#F0F4FA" stroke="#D6E4F5" stroke-width="1" stroke-dasharray="6,4"/>
+<text x="900" y="1974" text-anchor="middle" fill="#8FA8C8" font-size="14" font-weight="500">等 — 更多团队内设设计岗位的团队待补充</text>
+
+<!-- L3 level description -->
+<rect x="72" y="2110" width="1694" height="56" rx="8" fill="#F8FBFF" stroke="#D6E4F5" stroke-width="1"/>
+<text x="92" y="2136" fill="#5B9BF0" font-size="13" font-weight="600">L3 特征</text>
+<line x1="162" y1="2122" x2="162" y2="2152" stroke="#D6E4F5" stroke-width="1"/>
+<text x="178" y="2136" fill="#666" font-size="12">团队内部设有设计职位员工（非独立设计团队）</text>
+<line x1="530" y1="2122" x2="530" y2="2152" stroke="#D6E4F5" stroke-width="1"/>
+<text x="546" y="2136" fill="#666" font-size="12">设计人员直接服务于所属团队</text>
+<line x1="810" y1="2122" x2="810" y2="2152" stroke="#D6E4F5" stroke-width="1"/>
+<text x="826" y="2136" fill="#666" font-size="12">设计资源范围：本团队</text>
+
+
+<!-- ========== L4 — 具有一定设计能力 ========== -->
+<rect x="44" y="2208" width="1712" height="700" rx="12" fill="#F5F7FB"/>
+<rect x="44" y="2208" width="6" height="700" rx="3" fill="url(#l4Bar)"/>
+
+<rect x="72" y="2224" width="44" height="44" rx="22" fill="#8FB8FF"/>
+<text x="94" y="2252" text-anchor="middle" fill="white" font-size="17" font-weight="700">L4</text>
+<text x="130" y="2244" fill="#4A80C4" font-size="21" font-weight="700">具有一定设计能力</text>
+<text x="130" y="2266" fill="#5A7DA8" font-size="13">需承担设计相关工作，但内部无专职设计员工</text>
+
+<!-- L4 Cards - Row 1 -->
+<rect x="72" y="2282" width="396" height="110" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="72" y="2282" width="396" height="4" rx="2" fill="url(#l4Bar)"/>
+<text x="96" y="2310" fill="#1A1A1A" font-size="14" font-weight="700">产品体验组</text>
+<text x="96" y="2332" fill="#5A7DA8" font-size="12">输入法部 · 产品中心</text>
+<line x1="96" y1="2346" x2="444" y2="2346" stroke="#E4EDF7" stroke-width="1"/>
+<text x="96" y="2368" fill="#666" font-size="11">团队具有一定设计能力，需承担设计相关工作</text>
+<text x="96" y="2384" fill="#8FB8FF" font-size="10" font-weight="500">产品体验 · 交互优化 · 体验评估</text>
+
+<rect x="484" y="2282" width="396" height="110" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="484" y="2282" width="396" height="4" rx="2" fill="url(#l4Bar)"/>
+<text x="508" y="2310" fill="#1A1A1A" font-size="14" font-weight="700">X1</text>
+<text x="508" y="2332" fill="#5A7DA8" font-size="12">社交协作产品部</text>
+<line x1="508" y1="2346" x2="856" y2="2346" stroke="#E4EDF7" stroke-width="1"/>
+<text x="508" y="2368" fill="#666" font-size="11">团队具有一定设计能力，需承担设计相关工作</text>
+<text x="508" y="2384" fill="#8FB8FF" font-size="10" font-weight="500">协作体验 · 产品设计 · 交互优化</text>
+
+<rect x="896" y="2282" width="396" height="110" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="896" y="2282" width="396" height="4" rx="2" fill="url(#l4Bar)"/>
+<text x="920" y="2310" fill="#1A1A1A" font-size="14" font-weight="700">解决方案中心</text>
+<text x="920" y="2332" fill="#5A7DA8" font-size="12">安全产品三部</text>
+<line x1="920" y1="2346" x2="1268" y2="2346" stroke="#E4EDF7" stroke-width="1"/>
+<text x="920" y="2368" fill="#666" font-size="11">团队具有一定设计能力，需承担设计相关工作</text>
+<text x="920" y="2384" fill="#8FB8FF" font-size="10" font-weight="500">安全方案 · 产品体验 · 解决方案设计</text>
+
+<rect x="1308" y="2282" width="396" height="110" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="1308" y="2282" width="396" height="4" rx="2" fill="url(#l4Bar)"/>
+<text x="1332" y="2310" fill="#1A1A1A" font-size="14" font-weight="700">前端开发组</text>
+<text x="1332" y="2332" fill="#5A7DA8" font-size="12">云产品一部 · TCS产品中心</text>
+<line x1="1332" y1="2346" x2="1680" y2="2346" stroke="#E4EDF7" stroke-width="1"/>
+<text x="1332" y="2368" fill="#666" font-size="11">团队具有一定设计能力，需承担设计相关工作</text>
+<text x="1332" y="2384" fill="#8FB8FF" font-size="10" font-weight="500">前端开发 · TCS产品 · 体验优化</text>
+
+<!-- L4 Cards - Row 2 -->
+<rect x="72" y="2406" width="554" height="110" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="72" y="2406" width="554" height="4" rx="2" fill="url(#l4Bar)"/>
+<text x="96" y="2434" fill="#1A1A1A" font-size="14" font-weight="700">智驾云图产品组</text>
+<text x="96" y="2456" fill="#5A7DA8" font-size="12">地图平台部 · 智驾图产品架构与交付中心</text>
+<line x1="96" y1="2470" x2="602" y2="2470" stroke="#E4EDF7" stroke-width="1"/>
+<text x="96" y="2492" fill="#666" font-size="11">团队具有一定设计能力，需承担设计相关工作</text>
+<text x="96" y="2508" fill="#8FB8FF" font-size="10" font-weight="500">智驾云图 · 产品体验 · 交付设计</text>
+
+<rect x="642" y="2406" width="554" height="110" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="642" y="2406" width="554" height="4" rx="2" fill="url(#l4Bar)"/>
+<text x="666" y="2434" fill="#1A1A1A" font-size="14" font-weight="700">智驾云图组</text>
+<text x="666" y="2456" fill="#5A7DA8" font-size="12">地图平台部 · 智驾图产品架构与交付中心</text>
+<line x1="666" y1="2470" x2="1172" y2="2470" stroke="#E4EDF7" stroke-width="1"/>
+<text x="666" y="2492" fill="#666" font-size="11">团队具有一定设计能力，需承担设计相关工作</text>
+<text x="666" y="2508" fill="#8FB8FF" font-size="10" font-weight="500">智驾图 · 产品设计 · 体验优化</text>
+
+<rect x="1212" y="2406" width="554" height="110" rx="10" fill="white" filter="url(#cs)"/>
+<rect x="1212" y="2406" width="554" height="4" rx="2" fill="url(#l4Bar)"/>
+<text x="1236" y="2434" fill="#1A1A1A" font-size="14" font-weight="700">工程效能研发中心</text>
+<text x="1236" y="2456" fill="#5A7DA8" font-size="12">CSIG质量部</text>
+<line x1="1236" y1="2470" x2="1742" y2="2470" stroke="#E4EDF7" stroke-width="1"/>
+<text x="1236" y="2492" fill="#666" font-size="11">团队具有一定设计能力，需承担设计相关工作</text>
+<text x="1236" y="2508" fill="#8FB8FF" font-size="10" font-weight="500">工程效能 · 质量工具 · 产品体验</text>
+
+<!-- L4 等 placeholder -->
+<rect x="72" y="2532" width="1694" height="48" rx="8" fill="#F0F3FA" stroke="#D6E4F5" stroke-width="1" stroke-dasharray="6,4"/>
+<text x="900" y="2562" text-anchor="middle" fill="#8FA8C8" font-size="14" font-weight="500">等 — 更多具有一定设计能力的团队待补充</text>
+
+<!-- L4 level description -->
+<rect x="72" y="2600" width="1694" height="56" rx="8" fill="#F8FBFF" stroke="#D6E4F5" stroke-width="1"/>
+<text x="92" y="2626" fill="#8FB8FF" font-size="13" font-weight="600">L4 特征</text>
+<line x1="162" y1="2612" x2="162" y2="2642" stroke="#D6E4F5" stroke-width="1"/>
+<text x="178" y="2626" fill="#666" font-size="12">团队内部无专职设计员工</text>
+<line x1="410" y1="2612" x2="410" y2="2642" stroke="#D6E4F5" stroke-width="1"/>
+<text x="426" y="2626" fill="#666" font-size="12">但需承担设计相关工作/指标</text>
+<line x1="680" y1="2612" x2="680" y2="2642" stroke="#D6E4F5" stroke-width="1"/>
+<text x="696" y="2626" fill="#666" font-size="12">设计资源范围：需外部支持或自行承担</text>
+
+
+<!-- ========== LEGEND ========== -->
+<rect x="44" y="2940" width="1712" height="130" rx="12" fill="white" stroke="#E4EDF7" stroke-width="1"/>
+<text x="72" y="2972" fill="#1A1A1A" font-size="16" font-weight="700">图例说明</text>
+<line x1="72" y1="2986" x2="1726" y2="2986" stroke="#E4EDF7" stroke-width="1"/>
+
+<!-- Legend items -->
+<rect x="72" y="3002" width="24" height="24" rx="12" fill="#0052D9"/>
+<text x="94" y="3019" fill="#1A1A1A" font-size="13" font-weight="600">L1 服务业务线</text>
+<text x="230" y="3019" fill="#888" font-size="12">— 服务全CSIG业务线的设计部门</text>
+
+<rect x="530" y="3002" width="24" height="24" rx="12" fill="#2671E8"/>
+<text x="562" y="3019" fill="#1A1A1A" font-size="13" font-weight="600">L2 服务部门</text>
+<text x="690" y="3019" fill="#888" font-size="12">— 服务于部门的设计中心/团队</text>
+
+<rect x="980" y="3002" width="24" height="24" rx="12" fill="#5B9BF0"/>
+<text x="1012" y="3019" fill="#1A1A1A" font-size="13" font-weight="600">L3 团队内设设计岗位</text>
+<text x="1190" y="3019" fill="#888" font-size="12">— 团队内有设计员工</text>
+
+<rect x="1400" y="3002" width="24" height="24" rx="12" fill="#8FB8FF"/>
+<text x="1432" y="3019" fill="#1A1A1A" font-size="13" font-weight="600">L4 具有一定设计能力</text>
+<text x="1620" y="3019" fill="#888" font-size="12">— 内部无设计员工</text>
+
+<text x="72" y="3052" fill="#AAA" font-size="11">注：四层按设计资源服务范围划分，非隶属/附属关系。L3/L4 数据持续补充中。</text>
+
+<!-- Bottom decorative bar -->
+<rect x="44" y="3356" width="1712" height="4" rx="2" fill="url(#titleGrad)" opacity="0.3"/>
+
 </svg>
