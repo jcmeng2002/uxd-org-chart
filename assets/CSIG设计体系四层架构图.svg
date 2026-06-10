@@ -26,7 +26,7 @@
 <rect x="44" y="96" width="28" height="28" rx="14" fill="#0052D9"/>
 <text x="58" y="115" text-anchor="middle" fill="white" font-size="13" font-weight="700">1</text>
 <text x="82" y="112" fill="#003C99" font-size="15" font-weight="700">服务业务线</text>
-<text x="82" y="128" fill="#AAB5C4" font-size="10">服务全CSIG业务线的设计部门</text>
+<text x="82" y="128" fill="#AAB5C4" font-size="10">服务于业务线的设计部门</text>
 
 <!-- UXD 主名 -->
 <text x="44" y="152" fill="#1A1A1A" font-size="14" font-weight="700">信息平台与服务线 · 用户体验设计部</text>
@@ -54,8 +54,8 @@
 <!-- 小字注释：各中心下属组 -->
 <text x="44" y="218" fill="#B8C0CC" font-size="9">平台/桌面/增长/游戏 · 海纳/千寻/白泽 · 餐餐 · 瑶光/浮玉 · — · —</text>
 
-<!-- 小字注释：服务范围 -->
-<text x="44" y="234" fill="#B8C0CC" font-size="9">覆盖：腾讯云 · 元宝/AI · 地图/出行 · 安全 · 输入法/社交 · 营销/交易 · 质量/效能</text>
+<!-- 小字注释：业务线构成 -->
+<text x="44" y="234" fill="#B8C0CC" font-size="9">信息平台与服务线：内容产品中心 · 应用技术部 · 平台产品部 · 用户体验设计部 · 业务发展中心</text>
 
 <!-- 小字注释：人员构成 -->
 <text x="44" y="250" fill="#D0D6DE" font-size="8">人员构成：产品体验18 · 交互27 · UI开发8 · 多媒体1 · 消费互联网营销4 · 用研1 · 内容创作1</text>
