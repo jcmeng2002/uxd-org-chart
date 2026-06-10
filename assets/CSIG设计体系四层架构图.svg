@@ -26,11 +26,11 @@
 <rect x="44" y="96" width="28" height="28" rx="14" fill="#0052D9"/>
 <text x="58" y="115" text-anchor="middle" fill="white" font-size="13" font-weight="700">1</text>
 <text x="82" y="112" fill="#003C99" font-size="15" font-weight="700">服务业务线</text>
-<text x="82" y="128" fill="#AAB5C4" font-size="10">服务于业务线的设计部门</text>
+<text x="82" y="128" fill="#7A8899" font-size="10">服务于业务线的设计部门</text>
 
 <!-- 用户体验设计部主名 -->
 <text x="44" y="152" fill="#1A1A1A" font-size="14" font-weight="700">信息平台与服务线 · 用户体验设计部</text>
-<text x="44" y="167" fill="#C0C8D4" font-size="9">77人 · 助理总经理 andrawdai/戴乐标</text>
+<text x="44" y="167" fill="#7A8899" font-size="9">77人 · 助理总经理 andrawdai/戴乐标</text>
 
 <!-- 6个组标签横排 -->
 <rect x="44" y="178" width="136" height="24" rx="4" fill="#E6F0FF"/>
@@ -52,16 +52,16 @@
 <text x="846" y="195" text-anchor="middle" fill="#0052D9" font-size="11" font-weight="600">品牌与研用组</text>
 
 <!-- 小字注释：各中心下属组 -->
-<text x="44" y="218" fill="#B8C0CC" font-size="9">平台/桌面/增长/游戏 · 海纳/千寻/白泽 · 餐餐 · 瑶光/浮玉 · — · —</text>
+<text x="44" y="218" fill="#8E99A8" font-size="9">平台/桌面/增长/游戏 · 海纳/千寻/白泽 · 餐餐 · 瑶光/浮玉 · — · —</text>
 
 <!-- 小字注释：业务线构成 -->
-<text x="44" y="234" fill="#B8C0CC" font-size="9">信息平台与服务线：内容产品中心 · 应用技术部 · 平台产品部 · 用户体验设计部 · 业务发展中心</text>
+<text x="44" y="234" fill="#8E99A8" font-size="9">信息平台与服务线：内容产品中心 · 应用技术部 · 平台产品部 · 用户体验设计部 · 业务发展中心</text>
 
 <!-- 小字注释：人员构成 -->
-<text x="44" y="250" fill="#D0D6DE" font-size="8">人员构成：产品体验18 · 交互27 · UI开发8 · 多媒体1 · 消费互联网营销4 · 用研1 · 内容创作1</text>
+<text x="44" y="250" fill="#8E99A8" font-size="8">人员构成：产品体验18 · 交互27 · UI开发8 · 多媒体1 · 消费互联网营销4 · 用研1 · 内容创作1</text>
 
 <!-- 小字注释：组织架构 -->
-<text x="44" y="264" fill="#D0D6DE" font-size="8">架构：产品设计中心(zhenweizhang,21) · 搜索与内容(serenashen,19) · 工具与商业化(karliu,6) · 技术平台(sylviazou,16) · 设计研发(hermanshang,9) · 品牌与研用(zhenweizhang,7)</text>
+<text x="44" y="264" fill="#8E99A8" font-size="8">架构：产品设计中心(zhenweizhang,21) · 搜索与内容(serenashen,19) · 工具与商业化(karliu,6) · 技术平台(sylviazou,16) · 设计研发(hermanshang,9) · 品牌与研用(zhenweizhang,7)</text>
 
 
 <!-- ═══ L2 ═══ -->
@@ -71,41 +71,41 @@
 <rect x="44" y="308" width="28" height="28" rx="14" fill="#2671E8"/>
 <text x="58" y="327" text-anchor="middle" fill="white" font-size="13" font-weight="700">2</text>
 <text x="82" y="324" fill="#185FA5" font-size="15" font-weight="700">服务部门</text>
-<text x="82" y="340" fill="#AAB5C4" font-size="10">服务于部门的设计中心/团队</text>
+<text x="82" y="340" fill="#7A8899" font-size="10">服务于部门的设计中心/团队</text>
 
 <!-- 一中心 -->
 <rect x="44" y="352" width="460" height="48" rx="6" fill="#F6F9FF"/>
 <rect x="44" y="352" width="3" height="48" rx="1.5" fill="#2671E8"/>
 <text x="60" y="372" fill="#1A1A1A" font-size="13" font-weight="700">云产品四部 · 腾讯云设计一中心</text>
-<text x="60" y="390" fill="#C0C8D4" font-size="9">设计一/二/三/四/五组 · 体验研发组</text>
+<text x="60" y="390" fill="#7A8899" font-size="9">设计一/二/三/四/五组 · 体验研发组</text>
 
 <!-- 二中心 -->
 <rect x="516" y="352" width="448" height="48" rx="6" fill="#F6F9FF"/>
 <rect x="516" y="352" width="3" height="48" rx="1.5" fill="#2671E8"/>
 <text x="532" y="372" fill="#1A1A1A" font-size="13" font-weight="700">云产品四部 · 腾讯云设计二中心</text>
-<text x="532" y="390" fill="#C0C8D4" font-size="9">设计一/二/三/四/五组</text>
+<text x="532" y="390" fill="#7A8899" font-size="9">设计一/二/三/四/五组</text>
 
 <!-- 元宝 -->
 <rect x="44" y="408" width="460" height="48" rx="6" fill="#F6F9FF"/>
 <rect x="44" y="408" width="3" height="48" rx="1.5" fill="#2671E8"/>
 <text x="60" y="428" fill="#1A1A1A" font-size="13" font-weight="700">元宝产品部 · 设计中心</text>
-<text x="60" y="446" fill="#C0C8D4" font-size="9">设计一组 · 设计二组</text>
+<text x="60" y="446" fill="#7A8899" font-size="9">设计一组 · 设计二组</text>
 
 <!-- 地图 -->
 <rect x="516" y="408" width="448" height="48" rx="6" fill="#F6F9FF"/>
 <rect x="516" y="408" width="3" height="48" rx="1.5" fill="#2671E8"/>
 <text x="532" y="428" fill="#1A1A1A" font-size="13" font-weight="700">地图产品部 · 产品体验设计中心</text>
-<text x="532" y="446" fill="#C0C8D4" font-size="9">产品设计一/二/三组</text>
+<text x="532" y="446" fill="#7A8899" font-size="9">产品设计一/二/三组</text>
 
 <!-- 服务范围注释 -->
-<text x="44" y="476" fill="#C0C8D4" font-size="9">服务：云服务器/数据库/COS/控制台 · 云安全/监控/AI大数据 · 元宝/AIGC/智能助手 · 地图/导航/出行/智驾</text>
+<text x="44" y="476" fill="#7A8899" font-size="9">服务：云服务器/数据库/COS/控制台 · 云安全/监控/AI大数据 · 元宝/AIGC/智能助手 · 地图/导航/出行/智驾</text>
 
 <!-- 组织架构注释 -->
-<text x="44" y="492" fill="#D0D6DE" font-size="8">架构：一中心含体验研发组(前端/UI开发) · 二中心无体验研发组 · 元宝含AI产品/体验研究 · 地图含交互/视觉/出行/前端</text>
+<text x="44" y="492" fill="#8E99A8" font-size="8">架构：一中心含体验研发组(前端/UI开发) · 二中心无体验研发组 · 元宝含AI产品/体验研究 · 地图含交互/视觉/出行/前端</text>
 
 <!-- 可能还有 -->
 <line x1="44" y1="504" x2="952" y2="504" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="44" y="520" fill="#C8D0DC" font-size="10" font-style="italic">可能还有部分团队，待后续补充</text>
+<text x="44" y="520" fill="#7A8899" font-size="10" font-style="italic">可能还有部分团队，待后续补充</text>
 
 
 <!-- ═══ L3 ═══ -->
@@ -115,7 +115,7 @@
 <rect x="44" y="572" width="28" height="28" rx="14" fill="#5B9BF0"/>
 <text x="58" y="591" text-anchor="middle" fill="white" font-size="13" font-weight="700">3</text>
 <text x="82" y="588" fill="#2A6DB5" font-size="15" font-weight="700">团队内设设计岗位</text>
-<text x="82" y="604" fill="#AAB5C4" font-size="10">团队内有服务于该团队的设计员工</text>
+<text x="82" y="604" fill="#7A8899" font-size="10">团队内有服务于该团队的设计员工</text>
 
 <!-- 3个团队 -->
 <rect x="44" y="616" width="296" height="40" rx="6" fill="#F4F8FF"/>
@@ -131,11 +131,11 @@
 <text x="682" y="640" fill="#1A1A1A" font-size="12" font-weight="700">业务经营管理部 · 磐石产品中心</text>
 
 <!-- 注释 -->
-<text x="44" y="678" fill="#C0C8D4" font-size="9">以上团队内部设有设计职位的员工，直接服务于所在团队</text>
+<text x="44" y="678" fill="#7A8899" font-size="9">以上团队内部设有设计职位的员工，直接服务于所在团队</text>
 
 <!-- 可能还有 -->
 <line x1="44" y1="690" x2="952" y2="690" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="44" y="704" fill="#C8D0DC" font-size="10" font-style="italic">可能还有部分团队，待后续补充</text>
+<text x="44" y="704" fill="#7A8899" font-size="10" font-style="italic">可能还有部分团队，待后续补充</text>
 
 
 <!-- ═══ L4 ═══ -->
@@ -145,7 +145,7 @@
 <rect x="44" y="736" width="28" height="28" rx="14" fill="#8FB8FF"/>
 <text x="58" y="755" text-anchor="middle" fill="white" font-size="13" font-weight="700">4</text>
 <text x="82" y="752" fill="#5A7DA8" font-size="15" font-weight="700">具有一定设计能力</text>
-<text x="82" y="768" fill="#AAB5C4" font-size="10">需承担设计相关工作，但内部无专职设计员工</text>
+<text x="82" y="768" fill="#7A8899" font-size="10">需承担设计相关工作，但内部无专职设计员工</text>
 
 <!-- 7个团队 3+3+1 -->
 <rect x="44" y="782" width="296" height="36" rx="6" fill="#FAFBFF"/>
@@ -179,11 +179,11 @@
 <text x="58" y="893" fill="#1A1A1A" font-size="12" font-weight="700">CSIG质量部 · 工程效能研发中心</text>
 
 <!-- 注释 -->
-<text x="44" y="932" fill="#C0C8D4" font-size="9">以上团队需承担设计相关工作，但内部无专职设计员工</text>
+<text x="44" y="932" fill="#7A8899" font-size="9">以上团队需承担设计相关工作，但内部无专职设计员工</text>
 
 <!-- 可能还有 -->
 <line x1="44" y1="944" x2="952" y2="944" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="44" y="960" fill="#C8D0DC" font-size="10" font-style="italic">可能还有部分团队，待后续补充</text>
+<text x="44" y="960" fill="#7A8899" font-size="10" font-style="italic">可能还有部分团队，待后续补充</text>
 
 
 <!-- ═══ 底部图例 ═══ -->
@@ -196,6 +196,6 @@
 <text x="292" y="1033" fill="#666" font-size="10">L3 团队内设设计岗位</text>
 <rect x="432" y="1022" width="12" height="12" rx="2" fill="#8FB8FF"/>
 <text x="450" y="1033" fill="#666" font-size="10">L4 具有一定设计能力</text>
-<text x="950" y="1033" text-anchor="end" fill="#C8D0DC" font-size="9">信息平台与服务线 · 用户体验设计部</text>
+<text x="950" y="1033" text-anchor="end" fill="#7A8899" font-size="9">信息平台与服务线 · 用户体验设计部</text>
 
 </svg>
