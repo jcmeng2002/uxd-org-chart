@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780" width="1000" height="780">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" width="1000" height="720">
 <defs>
   <style>
     text { font-family: 'TencentSans', '腾讯体', 'PingFang SC', 'Microsoft YaHei', sans-serif; }
@@ -12,7 +12,7 @@
 </defs>
 
 <!-- 背景 -->
-<rect width="1000" height="780" fill="#F5F7FA"/>
+<rect width="1000" height="720" fill="#F5F7FA"/>
 
 <!-- 标题栏 -->
 <rect x="24" y="14" width="952" height="48" rx="8" fill="url(#hg)"/>
@@ -20,8 +20,8 @@
 <text x="950" y="40" text-anchor="end" fill="white" font-size="11" opacity="0.7">按设计资源服务范围划分 · 2026</text>
 
 <!-- ═══ Tier 1: 服务多个/大体量产品 ═══ -->
-<rect x="24" y="74" width="952" height="270" rx="8" fill="white" filter="url(#s)"/>
-<rect x="24" y="74" width="4" height="270" rx="2" fill="#0052D9"/>
+<rect x="24" y="74" width="952" height="258" rx="8" fill="white" filter="url(#s)"/>
+<rect x="24" y="74" width="4" height="258" rx="2" fill="#0052D9"/>
 
 <rect x="44" y="86" width="24" height="24" rx="12" fill="#0052D9"/>
 <text x="56" y="103" text-anchor="middle" fill="white" font-size="12" font-weight="700">1</text>
@@ -29,119 +29,113 @@
 <text x="78" y="114" fill="#7A8899" font-size="9">服务于CSIG中大体量产品的设计部门</text>
 
 <!-- Row 1: 用户体验设计部 + 云产品四部 -->
-<rect x="44" y="126" width="451" height="96" rx="6" fill="#F6F9FF"/>
-<rect x="44" y="126" width="3" height="96" rx="1.5" fill="#0052D9"/>
+<rect x="44" y="126" width="451" height="86" rx="6" fill="#F6F9FF"/>
+<rect x="44" y="126" width="3" height="86" rx="1.5" fill="#0052D9"/>
 <text x="58" y="144" fill="#1A1A1A" font-size="12" font-weight="700">用户体验设计部</text>
-<text x="58" y="158" fill="#7A8899" font-size="9">77人 · 助理总经理 andrawdai/戴乐标</text>
-<text x="58" y="172" fill="#7A8899" font-size="9">产品设计中心 · 搜索与内容设计中心 · 工具与商业化设计中心</text>
-<text x="58" y="184" fill="#7A8899" font-size="9">技术平台设计中心 · 设计研发工作室 · 品牌与研用组</text>
-<text x="58" y="200" fill="#3B7DD8" font-size="9">服务输入法、浏览器等产品</text>
+<text x="58" y="158" fill="#7A8899" font-size="9">产品设计中心 · 搜索与内容设计中心 · 工具与商业化设计中心</text>
+<text x="58" y="170" fill="#7A8899" font-size="9">技术平台设计中心 · 设计研发工作室 · 品牌与研用组</text>
+<text x="58" y="184" fill="#3B7DD8" font-size="9">服务输入法、浏览器等产品</text>
 
-<rect x="505" y="126" width="451" height="96" rx="6" fill="#F6F9FF"/>
-<rect x="505" y="126" width="3" height="96" rx="1.5" fill="#0052D9"/>
+<rect x="505" y="126" width="451" height="86" rx="6" fill="#F6F9FF"/>
+<rect x="505" y="126" width="3" height="86" rx="1.5" fill="#0052D9"/>
 <text x="519" y="144" fill="#1A1A1A" font-size="12" font-weight="700">云产品四部 · 设计一中心 / 设计二中心</text>
 <text x="519" y="158" fill="#7A8899" font-size="9">一中心：设计一/二/三/四/五组 · 体验研发组</text>
-<text x="519" y="172" fill="#7A8899" font-size="9">二中心：设计一/二/三/四/五组</text>
-<text x="519" y="200" fill="#3B7DD8" font-size="9">服务云、会议、文档、ima等产品</text>
+<text x="519" y="170" fill="#7A8899" font-size="9">二中心：设计一/二/三/四/五组</text>
+<text x="519" y="184" fill="#3B7DD8" font-size="9">服务云、会议、文档、ima等产品</text>
 
 <!-- Row 2: 元宝 + 地图 -->
-<rect x="44" y="230" width="451" height="54" rx="6" fill="#F6F9FF"/>
-<rect x="44" y="230" width="3" height="54" rx="1.5" fill="#0052D9"/>
-<text x="58" y="248" fill="#1A1A1A" font-size="12" font-weight="700">元宝产品部 · 设计中心</text>
-<text x="58" y="262" fill="#7A8899" font-size="9">设计一组 · 设计二组</text>
-<text x="58" y="276" fill="#3B7DD8" font-size="9">服务元宝</text>
+<rect x="44" y="220" width="451" height="54" rx="6" fill="#F6F9FF"/>
+<rect x="44" y="220" width="3" height="54" rx="1.5" fill="#0052D9"/>
+<text x="58" y="238" fill="#1A1A1A" font-size="12" font-weight="700">元宝产品部 · 设计中心</text>
+<text x="58" y="252" fill="#7A8899" font-size="9">设计一组 · 设计二组</text>
+<text x="58" y="266" fill="#3B7DD8" font-size="9">服务元宝</text>
 
-<rect x="505" y="230" width="451" height="54" rx="6" fill="#F6F9FF"/>
-<rect x="505" y="230" width="3" height="54" rx="1.5" fill="#0052D9"/>
-<text x="519" y="248" fill="#1A1A1A" font-size="12" font-weight="700">地图产品部 · 产品体验设计中心</text>
-<text x="519" y="262" fill="#7A8899" font-size="9">产品设计一/二/三组</text>
-<text x="519" y="276" fill="#3B7DD8" font-size="9">服务地图、出行等产品</text>
+<rect x="505" y="220" width="451" height="54" rx="6" fill="#F6F9FF"/>
+<rect x="505" y="220" width="3" height="54" rx="1.5" fill="#0052D9"/>
+<text x="519" y="238" fill="#1A1A1A" font-size="12" font-weight="700">地图产品部 · 产品体验设计中心</text>
+<text x="519" y="252" fill="#7A8899" font-size="9">产品设计一/二/三组</text>
+<text x="519" y="266" fill="#3B7DD8" font-size="9">服务地图、出行等产品</text>
 
 <!-- 可能还有 -->
-<line x1="44" y1="298" x2="952" y2="298" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="44" y="314" fill="#7A8899" font-size="9" font-style="italic">可能还有部分团队，待后续补充</text>
+<line x1="44" y1="288" x2="952" y2="288" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text x="44" y="304" fill="#7A8899" font-size="9" font-style="italic">可能还有部分团队，待后续补充</text>
 
 
 <!-- ═══ Tier 2: 团队内设设计岗位 ═══ -->
-<rect x="24" y="336" width="952" height="132" rx="8" fill="white" filter="url(#s)"/>
-<rect x="24" y="336" width="4" height="132" rx="2" fill="#2671E8"/>
+<rect x="24" y="326" width="952" height="132" rx="8" fill="white" filter="url(#s)"/>
+<rect x="24" y="326" width="4" height="132" rx="2" fill="#2671E8"/>
 
-<rect x="44" y="348" width="24" height="24" rx="12" fill="#2671E8"/>
-<text x="56" y="365" text-anchor="middle" fill="white" font-size="12" font-weight="700">2</text>
-<text x="78" y="362" fill="#185FA5" font-size="14" font-weight="700">团队内设设计岗位</text>
-<text x="78" y="376" fill="#7A8899" font-size="9">团队内有服务于该团队的设计员工</text>
+<rect x="44" y="338" width="24" height="24" rx="12" fill="#2671E8"/>
+<text x="56" y="355" text-anchor="middle" fill="white" font-size="12" font-weight="700">2</text>
+<text x="78" y="352" fill="#185FA5" font-size="14" font-weight="700">团队内设设计岗位</text>
+<text x="78" y="366" fill="#7A8899" font-size="9">团队内有服务于该团队的设计员工</text>
 
 <!-- 3个团队 -->
-<rect x="44" y="390" width="296" height="38" rx="6" fill="#F4F8FF"/>
-<rect x="44" y="390" width="3" height="38" rx="1.5" fill="#2671E8"/>
-<text x="58" y="414" fill="#1A1A1A" font-size="11" font-weight="700">业务经营管理部 · 磐石研发中心 · 前端开发组</text>
+<rect x="44" y="380" width="296" height="38" rx="6" fill="#F4F8FF"/>
+<rect x="44" y="380" width="3" height="38" rx="1.5" fill="#2671E8"/>
+<text x="58" y="404" fill="#1A1A1A" font-size="11" font-weight="700">业务经营管理部 · 磐石研发中心 · 前端开发组</text>
 
-<rect x="350" y="390" width="304" height="38" rx="6" fill="#F4F8FF"/>
-<rect x="350" y="390" width="3" height="38" rx="1.5" fill="#2671E8"/>
-<text x="364" y="414" fill="#1A1A1A" font-size="11" font-weight="700">营销与交易产品部 · 营销云产品中心 · 产品二组</text>
+<rect x="350" y="380" width="304" height="38" rx="6" fill="#F4F8FF"/>
+<rect x="350" y="380" width="3" height="38" rx="1.5" fill="#2671E8"/>
+<text x="364" y="404" fill="#1A1A1A" font-size="11" font-weight="700">营销与交易产品部 · 营销云产品中心 · 产品二组</text>
 
-<rect x="664" y="390" width="296" height="38" rx="6" fill="#F4F8FF"/>
-<rect x="664" y="390" width="3" height="38" rx="1.5" fill="#2671E8"/>
-<text x="678" y="414" fill="#1A1A1A" font-size="11" font-weight="700">业务经营管理部 · 磐石产品中心</text>
+<rect x="664" y="380" width="296" height="38" rx="6" fill="#F4F8FF"/>
+<rect x="664" y="380" width="3" height="38" rx="1.5" fill="#2671E8"/>
+<text x="678" y="404" fill="#1A1A1A" font-size="11" font-weight="700">业务经营管理部 · 磐石产品中心</text>
 
 <!-- 可能还有 -->
-<line x1="44" y1="440" x2="952" y2="440" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="44" y="454" fill="#7A8899" font-size="9" font-style="italic">可能还有部分团队，待后续补充</text>
+<line x1="44" y1="430" x2="952" y2="430" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text x="44" y="444" fill="#7A8899" font-size="9" font-style="italic">可能还有部分团队，待后续补充</text>
 
 
 <!-- ═══ Tier 3: 承担部分产品/架构设计任务 ═══ -->
-<rect x="24" y="482" width="952" height="226" rx="8" fill="white" filter="url(#s)"/>
-<rect x="24" y="482" width="4" height="226" rx="2" fill="#5B9BF0"/>
+<rect x="24" y="472" width="952" height="172" rx="8" fill="white" filter="url(#s)"/>
+<rect x="24" y="472" width="4" height="172" rx="2" fill="#5B9BF0"/>
 
-<rect x="44" y="494" width="24" height="24" rx="12" fill="#5B9BF0"/>
-<text x="56" y="511" text-anchor="middle" fill="white" font-size="12" font-weight="700">3</text>
-<text x="78" y="508" fill="#2A6DB5" font-size="14" font-weight="700">承担部分产品/架构设计任务，但团队内无设计员工</text>
+<rect x="44" y="484" width="24" height="24" rx="12" fill="#5B9BF0"/>
+<text x="56" y="501" text-anchor="middle" fill="white" font-size="12" font-weight="700">3</text>
+<text x="78" y="498" fill="#2A6DB5" font-size="14" font-weight="700">承担部分产品/架构设计任务，但团队内无设计员工</text>
 
 <!-- Row 1 -->
-<rect x="44" y="530" width="304" height="34" rx="6" fill="#FAFBFF"/>
-<rect x="44" y="530" width="3" height="34" rx="1.5" fill="#5B9BF0"/>
-<text x="58" y="552" fill="#1A1A1A" font-size="11" font-weight="700">输入法部 · 产品中心 · 产品体验组</text>
+<rect x="44" y="520" width="304" height="34" rx="6" fill="#FAFBFF"/>
+<rect x="44" y="520" width="3" height="34" rx="1.5" fill="#5B9BF0"/>
+<text x="58" y="542" fill="#1A1A1A" font-size="11" font-weight="700">社交协作产品部 · X1</text>
 
-<rect x="358" y="530" width="304" height="34" rx="6" fill="#FAFBFF"/>
-<rect x="358" y="530" width="3" height="34" rx="1.5" fill="#5B9BF0"/>
-<text x="372" y="552" fill="#1A1A1A" font-size="11" font-weight="700">社交协作产品部 · X1</text>
+<rect x="358" y="520" width="304" height="34" rx="6" fill="#FAFBFF"/>
+<rect x="358" y="520" width="3" height="34" rx="1.5" fill="#5B9BF0"/>
+<text x="372" y="542" fill="#1A1A1A" font-size="11" font-weight="700">安全产品三部 · 解决方案中心</text>
 
-<rect x="672" y="530" width="304" height="34" rx="6" fill="#FAFBFF"/>
-<rect x="672" y="530" width="3" height="34" rx="1.5" fill="#5B9BF0"/>
-<text x="686" y="552" fill="#1A1A1A" font-size="11" font-weight="700">安全产品三部 · 解决方案中心</text>
+<rect x="672" y="520" width="304" height="34" rx="6" fill="#FAFBFF"/>
+<rect x="672" y="520" width="3" height="34" rx="1.5" fill="#5B9BF0"/>
+<text x="686" y="542" fill="#1A1A1A" font-size="11" font-weight="700">云产品一部 · TCS产品中心 · 前端开发组</text>
 
 <!-- Row 2 -->
-<rect x="44" y="572" width="304" height="34" rx="6" fill="#FAFBFF"/>
-<rect x="44" y="572" width="3" height="34" rx="1.5" fill="#5B9BF0"/>
-<text x="58" y="594" fill="#1A1A1A" font-size="11" font-weight="700">云产品一部 · TCS产品中心 · 前端开发组</text>
+<rect x="44" y="562" width="304" height="44" rx="6" fill="#FAFBFF"/>
+<rect x="44" y="562" width="3" height="44" rx="1.5" fill="#5B9BF0"/>
+<text x="58" y="580" fill="#1A1A1A" font-size="10" font-weight="700">地图平台部 · 智驾图产品架构与交付中心</text>
+<text x="58" y="596" fill="#1A1A1A" font-size="10" font-weight="700">智驾云图产品组</text>
 
-<rect x="358" y="572" width="304" height="44" rx="6" fill="#FAFBFF"/>
-<rect x="358" y="572" width="3" height="44" rx="1.5" fill="#5B9BF0"/>
-<text x="372" y="590" fill="#1A1A1A" font-size="10" font-weight="700">地图平台部 · 智驾图产品架构与交付中心</text>
-<text x="372" y="606" fill="#1A1A1A" font-size="10" font-weight="700">智驾云图产品组</text>
+<rect x="358" y="562" width="304" height="44" rx="6" fill="#FAFBFF"/>
+<rect x="358" y="562" width="3" height="44" rx="1.5" fill="#5B9BF0"/>
+<text x="372" y="580" fill="#1A1A1A" font-size="10" font-weight="700">地图平台部 · 智驾图产品架构与交付中心</text>
+<text x="372" y="596" fill="#1A1A1A" font-size="10" font-weight="700">智驾云图组</text>
 
-<rect x="672" y="572" width="304" height="44" rx="6" fill="#FAFBFF"/>
-<rect x="672" y="572" width="3" height="44" rx="1.5" fill="#5B9BF0"/>
-<text x="686" y="590" fill="#1A1A1A" font-size="10" font-weight="700">地图平台部 · 智驾图产品架构与交付中心</text>
-<text x="686" y="606" fill="#1A1A1A" font-size="10" font-weight="700">智驾云图组</text>
-
-<!-- Row 3 -->
-<rect x="44" y="626" width="304" height="34" rx="6" fill="#FAFBFF"/>
-<rect x="44" y="626" width="3" height="34" rx="1.5" fill="#5B9BF0"/>
-<text x="58" y="648" fill="#1A1A1A" font-size="11" font-weight="700">CSIG质量部 · 工程效能研发中心</text>
+<rect x="672" y="562" width="304" height="44" rx="6" fill="#FAFBFF"/>
+<rect x="672" y="562" width="3" height="44" rx="1.5" fill="#5B9BF0"/>
+<text x="686" y="584" fill="#1A1A1A" font-size="11" font-weight="700">CSIG质量部 · 工程效能研发中心</text>
 
 <!-- 可能还有 -->
-<line x1="44" y1="674" x2="952" y2="674" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
-<text x="44" y="688" fill="#7A8899" font-size="9" font-style="italic">可能还有部分团队，待后续补充</text>
+<line x1="44" y1="618" x2="952" y2="618" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
+<text x="44" y="632" fill="#7A8899" font-size="9" font-style="italic">可能还有部分团队，待后续补充</text>
 
 
 <!-- ═══ 底部图例 ═══ -->
-<rect x="24" y="722" width="952" height="28" rx="8" fill="white" filter="url(#s)"/>
-<rect x="44" y="731" width="12" height="10" rx="2" fill="#0052D9"/>
-<text x="62" y="740" fill="#666" font-size="9">服务多个/大体量产品</text>
-<rect x="200" y="731" width="12" height="10" rx="2" fill="#2671E8"/>
-<text x="218" y="740" fill="#666" font-size="9">团队内设设计岗位</text>
-<rect x="340" y="731" width="12" height="10" rx="2" fill="#5B9BF0"/>
-<text x="358" y="740" fill="#666" font-size="9">承担部分产品/架构设计任务，但团队内无设计员工</text>
+<rect x="24" y="660" width="952" height="28" rx="8" fill="white" filter="url(#s)"/>
+<rect x="44" y="669" width="12" height="10" rx="2" fill="#0052D9"/>
+<text x="62" y="678" fill="#666" font-size="9">服务多个/大体量产品</text>
+<rect x="200" y="669" width="12" height="10" rx="2" fill="#2671E8"/>
+<text x="218" y="678" fill="#666" font-size="9">团队内设设计岗位</text>
+<rect x="340" y="669" width="12" height="10" rx="2" fill="#5B9BF0"/>
+<text x="358" y="678" fill="#666" font-size="9">承担部分产品/架构设计任务，但团队内无设计员工</text>
 
 </svg>
