@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 1380" width="830" height="1380">
+  <defs>
+    <style>
+      text { font-family: 'TencentSans', '腾讯体', 'PingFang SC', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="830" height="1380" fill="#FAFBFD"/>
+
+  <!-- 标题 -->
+  <text x="415" y="36" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">用户体验设计部 · 设计组织架构</text>
+
+  <!-- ====== 根节点 ====== -->
+  <rect x="24" y="68" width="130" height="40" rx="6" fill="#0052D9"/>
+  <text x="89" y="93" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">用户体验设计部</text>
+
+  <!-- 根→中心 连接线 -->
+  <path d="M154 88 L180 88 L180 94 L210 94" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+  <path d="M154 88 L180 88 L180 310 L210 310" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+  <path d="M154 88 L180 88 L180 486 L210 486" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+  <path d="M154 88 L180 88 L180 618 L210 618" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+  <path d="M154 88 L180 88 L180 764 L210 764" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+  <path d="M154 88 L180 88 L180 894 L210 894" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+
+  <!-- ==================== 产品平台设计中心 ==================== -->
+  <g>
+    <rect x="210" y="69" width="380" height="50" rx="6" fill="#0052D9"/>
+    <text x="226" y="91" fill="#FFFFFF" font-size="13" font-weight="700">产品平台设计中心</text>
+    <text x="226" y="109" fill="#B8D4FF" font-size="10">21人 · 负责人 zhenweizhang(张振伟)</text>
+
+    <rect x="210" y="127" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="222" y="146" fill="#1A1A1A" font-size="11" font-weight="600">平台组</text>
+    <text x="270" y="146" fill="#2671E8" font-size="10" font-weight="600">4人</text>
+    <text x="296" y="146" fill="#5A6A7A" font-size="9">purplexinli(李昕)</text>
+    <text x="222" y="162" fill="#7A8899" font-size="8.5">交互2 / 视觉2</text>
+    <text x="222" y="175" fill="#7A8899" font-size="8">平台 / 长宽交互</text>
+
+    <rect x="405" y="127" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="417" y="146" fill="#1A1A1A" font-size="11" font-weight="600">桌面设计组</text>
+    <text x="493" y="146" fill="#2671E8" font-size="10" font-weight="600">6人</text>
+    <text x="520" y="146" fill="#5A6A7A" font-size="9">zhenweizhang(张振伟)</text>
+    <text x="417" y="162" fill="#7A8899" font-size="8.5">产品1 / 交互3 / 视觉2</text>
+    <text x="417" y="175" fill="#7A8899" font-size="8">桌面产品体验</text>
+
+    <rect x="210" y="189" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="222" y="208" fill="#1A1A1A" font-size="11" font-weight="600">增长设计组</text>
+    <text x="304" y="208" fill="#2671E8" font-size="10" font-weight="600">6人</text>
+    <text x="330" y="208" fill="#5A6A7A" font-size="9">zhenweizhang(张振伟)</text>
+    <text x="222" y="224" fill="#7A8899" font-size="8.5">产品4 / 多媒体1 / 视觉1</text>
+    <text x="222" y="237" fill="#7A8899" font-size="8">增长产品体验</text>
+
+    <rect x="405" y="189" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="417" y="208" fill="#1A1A1A" font-size="11" font-weight="600">游戏设计组</text>
+    <text x="493" y="208" fill="#2671E8" font-size="10" font-weight="600">7人</text>
+    <text x="520" y="208" fill="#5A6A7A" font-size="9">zhenweizhang(张振伟)</text>
+    <text x="417" y="224" fill="#7A8899" font-size="8.5">产品2 / 交互1 / 视觉4</text>
+    <text x="417" y="237" fill="#7A8899" font-size="8">游戏产品体验</text>
+
+    <!-- 左侧连接线 -->
+    <path d="M204 155 L204 217" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+    <line x1="204" y1="155" x2="210" y2="155" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="186" x2="210" y2="186" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="217" x2="210" y2="217" stroke="#C0D0E0" stroke-width="1"/>
+    <path d="M399 155 L399 217" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+    <line x1="393" y1="155" x2="399" y2="155" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="393" y1="186" x2="399" y2="186" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="393" y1="217" x2="399" y2="217" stroke="#C0D0E0" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== 搜索与内容设计中心 ==================== -->
+  <g>
+    <rect x="210" y="285" width="380" height="50" rx="6" fill="#0052D9"/>
+    <text x="226" y="307" fill="#FFFFFF" font-size="13" font-weight="700">搜索与内容设计中心</text>
+    <text x="226" y="325" fill="#B8D4FF" font-size="10">22人 · 负责人 serenasen(沈艳慧)</text>
+
+    <rect x="210" y="343" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="222" y="362" fill="#1A1A1A" font-size="11" font-weight="600">海纳组</text>
+    <text x="270" y="362" fill="#2671E8" font-size="10" font-weight="600">12人</text>
+    <text x="300" y="362" fill="#5A6A7A" font-size="9">serenasen(沈艳慧)</text>
+    <text x="222" y="378" fill="#7A8899" font-size="8.5">产品4 / 交互2 / 视觉6</text>
+    <text x="222" y="391" fill="#7A8899" font-size="8">海纳产品体验</text>
+
+    <rect x="405" y="343" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="417" y="362" fill="#1A1A1A" font-size="11" font-weight="600">千寻组</text>
+    <text x="463" y="362" fill="#2671E8" font-size="10" font-weight="600">9人</text>
+    <text x="490" y="362" fill="#5A6A7A" font-size="9">serenasen(沈艳慧)</text>
+    <text x="417" y="378" fill="#7A8899" font-size="8.5">产品3 / 交互3 / 视觉3</text>
+    <text x="417" y="391" fill="#7A8899" font-size="8">千寻产品体验</text>
+
+    <path d="M204 371 L204 387" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+    <line x1="204" y1="371" x2="210" y2="371" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="387" x2="210" y2="387" stroke="#C0D0E0" stroke-width="1"/>
+    <path d="M399 371 L399 387" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+    <line x1="393" y1="371" x2="399" y2="371" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="393" y1="387" x2="399" y2="387" stroke="#C0D0E0" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== 工具与商业化设计中心 ==================== -->
+  <g>
+    <rect x="210" y="461" width="380" height="50" rx="6" fill="#0052D9"/>
+    <text x="226" y="483" fill="#FFFFFF" font-size="13" font-weight="700">工具与商业化设计中心</text>
+    <text x="226" y="501" fill="#B8D4FF" font-size="10">6人 · 负责人 karliu(卢锶)</text>
+
+    <rect x="210" y="519" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="222" y="538" fill="#1A1A1A" font-size="11" font-weight="600">白泽组</text>
+    <text x="270" y="538" fill="#2671E8" font-size="10" font-weight="600">5人</text>
+    <text x="296" y="538" fill="#5A6A7A" font-size="9">karliu(卢锶)</text>
+    <text x="222" y="554" fill="#7A8899" font-size="8.5">产品2 / 视觉3</text>
+    <text x="222" y="567" fill="#7A8899" font-size="8">工具商业化</text>
+
+    <rect x="405" y="519" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="417" y="538" fill="#1A1A1A" font-size="11" font-weight="600">饕餮组</text>
+    <text x="463" y="538" fill="#2671E8" font-size="10" font-weight="600">2人</text>
+    <text x="484" y="538" fill="#5A6A7A" font-size="9">karliu(卢锶)</text>
+    <text x="417" y="554" fill="#7A8899" font-size="8.5">交互1 / 视觉1</text>
+    <text x="417" y="567" fill="#7A8899" font-size="8">工具商业化</text>
+
+    <path d="M204 547 L204 563" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+    <line x1="204" y1="547" x2="210" y2="547" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="563" x2="210" y2="563" stroke="#C0D0E0" stroke-width="1"/>
+    <path d="M399 547 L399 563" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+    <line x1="393" y1="547" x2="399" y2="547" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="393" y1="563" x2="399" y2="563" stroke="#C0D0E0" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== 技术平台设计中心 ==================== -->
+  <g>
+    <rect x="210" y="593" width="380" height="50" rx="6" fill="#0052D9"/>
+    <text x="226" y="615" fill="#FFFFFF" font-size="13" font-weight="700">技术平台设计中心</text>
+    <text x="226" y="633" fill="#B8D4FF" font-size="10">19人 · 负责人 sylviazou(邹欣)</text>
+
+    <rect x="210" y="651" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="222" y="670" fill="#1A1A1A" font-size="11" font-weight="600">琢光组</text>
+    <text x="270" y="670" fill="#2671E8" font-size="10" font-weight="600">8人</text>
+    <text x="296" y="670" fill="#5A6A7A" font-size="9">sylviazou(邹欣)</text>
+    <text x="222" y="686" fill="#7A8899" font-size="8.5">产品1 / 交互3 / 视觉4</text>
+    <text x="222" y="699" fill="#7A8899" font-size="8">技术平台</text>
+
+    <rect x="405" y="651" width="185" height="56" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="417" y="670" fill="#1A1A1A" font-size="11" font-weight="600">浮玉组</text>
+    <text x="463" y="670" fill="#2671E8" font-size="10" font-weight="600">12人</text>
+    <text x="490" y="670" fill="#5A6A7A" font-size="9">sylviazou(邹欣)</text>
+    <text x="417" y="686" fill="#7A8899" font-size="8.5">产品2 / 交互6 / 视觉4</text>
+    <text x="417" y="699" fill="#7A8899" font-size="8">技术平台</text>
+
+    <path d="M204 679 L204 695" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+    <line x1="204" y1="679" x2="210" y2="679" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="695" x2="210" y2="695" stroke="#C0D0E0" stroke-width="1"/>
+    <path d="M399 679 L399 695" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+    <line x1="393" y1="679" x2="399" y2="679" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="393" y1="695" x2="399" y2="695" stroke="#C0D0E0" stroke-width="1"/>
+  </g>
+
+  <!-- ==================== 设计研发工作室 ==================== -->
+  <g>
+    <rect x="210" y="739" width="380" height="50" rx="6" fill="#EBF2FE" stroke="#8FB8FF" stroke-width="1"/>
+    <rect x="210" y="739" width="4" height="50" rx="2" fill="#2671E8"/>
+    <text x="224" y="761" fill="#1A1A1A" font-size="13" font-weight="700">设计研发工作室</text>
+    <text x="330" y="761" fill="#2671E8" font-size="10" font-weight="600">11人</text>
+    <text x="358" y="761" fill="#5A6A7A" font-size="9">hermanzhang(张仁寿)</text>
+    <text x="224" y="779" fill="#7A8899" font-size="9">UI开发10 / 产品体验1</text>
+  </g>
+
+  <!-- ==================== 品牌与用研组 ==================== -->
+  <g>
+    <rect x="210" y="801" width="380" height="50" rx="6" fill="#EBF2FE" stroke="#8FB8FF" stroke-width="1"/>
+    <rect x="210" y="801" width="4" height="50" rx="2" fill="#2671E8"/>
+    <text x="224" y="823" fill="#1A1A1A" font-size="13" font-weight="700">品牌与用研组</text>
+    <text x="320" y="823" fill="#2671E8" font-size="10" font-weight="600">7人</text>
+    <text x="347" y="823" fill="#5A6A7A" font-size="9">zhenweizhang(张振伟)</text>
+    <text x="224" y="841" fill="#7A8899" font-size="9">产品1 / 消费营销4 / 用研1 / 内容1</text>
+  </g>
+
+  <!-- 服务业务标注（框外右侧） -->
+  <text x="600" y="83" fill="#2671E8" font-size="10" font-weight="600">→ 输入法</text>
+  <text x="600" y="97" fill="#2671E8" font-size="10" font-weight="600">→ 浏览器</text>
+  <text x="600" y="111" fill="#7A8899" font-size="9">曾服务于信息平台与服务线</text>
+
+  <!-- 图例 -->
+  <g transform="translate(210, 865)">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#EBF2FE" stroke="#8FB8FF" stroke-width="1"/>
+    <text x="16" y="9" fill="#7A8899" font-size="9">职能支持组（研发/品牌/用研）</text>
+    <rect x="200" y="0" width="10" height="10" rx="2" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="216" y="9" fill="#7A8899" font-size="9">设计能力组（按业务划分）</text>
+  </g>
+</svg>
