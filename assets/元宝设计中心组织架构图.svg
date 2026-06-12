@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360">
+  <defs>
+    <style>
+      text { font-family: 'TencentSans', '腾讯体', 'PingFang SC', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="360" fill="#FAFBFD"/>
+
+  <!-- 标题 -->
+  <text x="400" y="36" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">元宝产品部 · 设计中心组织架构</text>
+
+  <!-- ====== 根节点 ====== -->
+  <rect x="30" y="168" width="100" height="40" rx="6" fill="#0052D9"/>
+  <text x="80" y="193" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">元宝产品部</text>
+
+  <!-- 根→设计中心 连接线 -->
+  <path d="M130 188 L170 188 L170 98 L210 98" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+
+  <!-- ====== 设计中心 ====== -->
+  <rect x="210" y="73" width="380" height="50" rx="6" fill="#0052D9"/>
+  <text x="226" y="95" fill="#FFFFFF" font-size="13" font-weight="700">设计中心</text>
+  <text x="226" y="113" fill="#B8D4FF" font-size="10">53人 · 负责人 jojojozhou(jojojozhou)</text>
+
+  <!-- 职责（框外右侧，精简重点） -->
+  <text x="600" y="91" fill="#2671E8" font-size="10" font-weight="600">→ 元宝</text>
+  <text x="600" y="105" fill="#7A8899" font-size="9">体验设计 / 品牌运营设计</text>
+
+  <!-- ====== 设计一组 34人 ====== -->
+  <rect x="210" y="133" width="380" height="48" rx="5" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+  <rect x="210" y="133" width="4" height="48" rx="2" fill="#2671E8"/>
+  <text x="224" y="153" fill="#1A1A1A" font-size="11" font-weight="600">设计一组</text>
+  <text x="294" y="153" fill="#2671E8" font-size="10" font-weight="600">34人</text>
+  <text x="338" y="153" fill="#5A6A7A" font-size="9">负责人 jojojozhou(jojojozhou)</text>
+  <text x="224" y="171" fill="#7A8899" font-size="9">个性化智能服务 / 品牌运营设计</text>
+  <!-- 服务产品（框外） -->
+  <text x="600" y="149" fill="#2671E8" font-size="10" font-weight="600">→ 垂类功能 &amp; 生态合作</text>
+  <text x="600" y="163" fill="#2671E8" font-size="10" font-weight="600">→ 元宝品牌运营</text>
+
+  <!-- ====== 设计二组 19人 ====== -->
+  <rect x="210" y="187" width="380" height="48" rx="5" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+  <rect x="210" y="187" width="4" height="48" rx="2" fill="#2671E8"/>
+  <text x="224" y="207" fill="#1A1A1A" font-size="11" font-weight="600">设计二组</text>
+  <text x="294" y="207" fill="#2671E8" font-size="10" font-weight="600">19人</text>
+  <text x="338" y="207" fill="#5A6A7A" font-size="9">负责人 elionpeng(彭兆元)</text>
+  <text x="224" y="225" fill="#7A8899" font-size="9">核心对话交互 / 跨端体验一致性</text>
+  <!-- 服务产品（框外） -->
+  <text x="600" y="203" fill="#2671E8" font-size="10" font-weight="600">→ 元宝基础体验</text>
+  <text x="600" y="217" fill="#2671E8" font-size="10" font-weight="600">→ 会议多端体验</text>
+
+  <!-- 左侧树形连接线 -->
+  <path d="M204 157 L204 211" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+  <line x1="204" y1="157" x2="210" y2="157" stroke="#C0D0E0" stroke-width="1"/>
+  <line x1="204" y1="211" x2="210" y2="211" stroke="#C0D0E0" stroke-width="1"/>
+
+  <!-- 图例 -->
+  <g transform="translate(210, 260)">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+    <text x="16" y="9" fill="#7A8899" font-size="9">负责具体产品线</text>
+  </g>
+</svg>
