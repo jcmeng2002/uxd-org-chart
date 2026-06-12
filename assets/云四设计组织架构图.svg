@@ -27,10 +27,10 @@
     <text x="226" y="82" fill="#FFFFFF" font-size="13" font-weight="700">腾讯云设计一中心</text>
     <text x="226" y="100" fill="#B8D4FF" font-size="10">82人 · 负责人 sissiwu(吴茜)</text>
 
-    <!-- 职责说明（框外右侧） -->
-    <text x="600" y="74" fill="#7A8899" font-size="9">聚焦基础&amp;平台产品与开发者用户体验</text>
-    <text x="600" y="86" fill="#7A8899" font-size="9">负责腾讯云官网平台与基础产品的体验设计与品牌设计</text>
-    <text x="600" y="98" fill="#7A8899" font-size="9">负责基础与平台产品及主要PaaS&amp;SaaS相关产品的UI开发与设计效率工具研发</text>
+    <!-- 职责（框外右侧，精简重点） -->
+    <text x="600" y="74" fill="#2671E8" font-size="10" font-weight="600">→ 基础&amp;平台产品</text>
+    <text x="600" y="88" fill="#2671E8" font-size="10" font-weight="600">→ 开发者用户体验</text>
+    <text x="600" y="102" fill="#7A8899" font-size="9">云官网 / 体验设计 / 品牌设计 / UI开发</text>
 
     <!-- 设计一组 15人 -->
     <rect x="210" y="120" width="380" height="48" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
@@ -91,9 +91,9 @@
     <text x="226" y="480" fill="#FFFFFF" font-size="13" font-weight="700">腾讯云设计二中心</text>
     <text x="226" y="498" fill="#B8D4FF" font-size="10">91人 · 负责人 jinjinliu(刘晶晶)</text>
 
-    <!-- 职责说明（框外右侧） -->
-    <text x="600" y="472" fill="#7A8899" font-size="9">聚焦PaaS、SaaS类产品</text>
-    <text x="600" y="484" fill="#7A8899" font-size="9">负责相关产品的体验设计、商业化设计、品牌运营设计</text>
+    <!-- 职责（框外右侧，精简重点） -->
+    <text x="600" y="476" fill="#2671E8" font-size="10" font-weight="600">→ PaaS &amp; SaaS 产品</text>
+    <text x="600" y="492" fill="#7A8899" font-size="9">体验设计 / 商业化设计 / 品牌运营设计</text>
 
     <!-- 设计一组 11人 -->
     <rect x="210" y="518" width="380" height="48" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
