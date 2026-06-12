@@ -74,19 +74,19 @@
   <g>
     <rect x="210" y="378" width="380" height="50" rx="6" fill="#0052D9"/>
     <text x="226" y="400" fill="#FFFFFF" font-size="13" font-weight="700">搜索与内容设计中心</text>
-    <text x="226" y="418" fill="#B8D4FF" font-size="10">22人 · 负责人 serenasen(沈艳慧)</text>
+    <text x="226" y="418" fill="#B8D4FF" font-size="10">22人 · 负责人 serenashen(沈艳慧)</text>
 
     <!-- 海纳组 12人 -->
     <rect x="210" y="438" width="380" height="34" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
     <text x="226" y="460" fill="#1A1A1A" font-size="11" font-weight="600">海纳组</text>
     <text x="274" y="460" fill="#2671E8" font-size="10" font-weight="600">12人</text>
-    <text x="306" y="460" fill="#5A6A7A" font-size="9">serenasen(沈艳慧)</text>
+    <text x="306" y="460" fill="#5A6A7A" font-size="9">serenashen(沈艳慧)</text>
 
     <!-- 千寻组 9人 -->
     <rect x="210" y="478" width="380" height="34" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
     <text x="226" y="500" fill="#1A1A1A" font-size="11" font-weight="600">千寻组</text>
     <text x="268" y="500" fill="#2671E8" font-size="10" font-weight="600">9人</text>
-    <text x="294" y="500" fill="#5A6A7A" font-size="9">serenasen(沈艳慧)</text>
+    <text x="294" y="500" fill="#5A6A7A" font-size="9">serenashen(沈艳慧)</text>
 
     <!-- 左侧树形连接线 -->
     <path d="M204 455 L204 495" stroke="#C0D0E0" stroke-width="1" fill="none"/>
@@ -98,19 +98,19 @@
   <g>
     <rect x="210" y="536" width="380" height="50" rx="6" fill="#0052D9"/>
     <text x="226" y="558" fill="#FFFFFF" font-size="13" font-weight="700">工具与商业化设计中心</text>
-    <text x="226" y="576" fill="#B8D4FF" font-size="10">6人 · 负责人 karliu(卢锶)</text>
+    <text x="226" y="576" fill="#B8D4FF" font-size="10">6人 · 负责人 karllu(卢锟)</text>
 
     <!-- 白泽组 5人 -->
     <rect x="210" y="596" width="380" height="34" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
     <text x="226" y="618" fill="#1A1A1A" font-size="11" font-weight="600">白泽组</text>
     <text x="274" y="618" fill="#2671E8" font-size="10" font-weight="600">5人</text>
-    <text x="300" y="618" fill="#5A6A7A" font-size="9">karliu(卢锶)</text>
+    <text x="300" y="618" fill="#5A6A7A" font-size="9">karllu(卢锟)</text>
 
     <!-- 饕餮组 2人 -->
     <rect x="210" y="636" width="380" height="34" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
     <text x="226" y="658" fill="#1A1A1A" font-size="11" font-weight="600">饕餮组</text>
     <text x="268" y="658" fill="#2671E8" font-size="10" font-weight="600">2人</text>
-    <text x="288" y="658" fill="#5A6A7A" font-size="9">karliu(卢锶)</text>
+    <text x="288" y="658" fill="#5A6A7A" font-size="9">karllu(卢锟)</text>
 
     <!-- 左侧树形连接线 -->
     <path d="M204 613 L204 653" stroke="#C0D0E0" stroke-width="1" fill="none"/>
@@ -122,19 +122,19 @@
   <g>
     <rect x="210" y="694" width="380" height="50" rx="6" fill="#0052D9"/>
     <text x="226" y="716" fill="#FFFFFF" font-size="13" font-weight="700">技术平台设计中心</text>
-    <text x="226" y="734" fill="#B8D4FF" font-size="10">19人 · 负责人 sylviazou(邹欣)</text>
+    <text x="226" y="734" fill="#B8D4FF" font-size="10">19人 · 负责人 sylviazou(邹放)</text>
 
     <!-- 琢光组 8人 -->
     <rect x="210" y="754" width="380" height="34" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
     <text x="226" y="776" fill="#1A1A1A" font-size="11" font-weight="600">琢光组</text>
     <text x="274" y="776" fill="#2671E8" font-size="10" font-weight="600">8人</text>
-    <text x="300" y="776" fill="#5A6A7A" font-size="9">sylviazou(邹欣)</text>
+    <text x="300" y="776" fill="#5A6A7A" font-size="9">sylviazou(邹放)</text>
 
     <!-- 浮玉组 12人 -->
     <rect x="210" y="794" width="380" height="34" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
     <text x="226" y="816" fill="#1A1A1A" font-size="11" font-weight="600">浮玉组</text>
     <text x="274" y="816" fill="#2671E8" font-size="10" font-weight="600">12人</text>
-    <text x="306" y="816" fill="#5A6A7A" font-size="9">sylviazou(邹欣)</text>
+    <text x="306" y="816" fill="#5A6A7A" font-size="9">sylviazou(邹放)</text>
 
     <!-- 左侧树形连接线 -->
     <path d="M204 771 L204 811" stroke="#C0D0E0" stroke-width="1" fill="none"/>
