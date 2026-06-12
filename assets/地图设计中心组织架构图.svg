@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440">
+  <defs>
+    <style>
+      text { font-family: 'TencentSans', '腾讯体', 'PingFang SC', sans-serif; }
+    </style>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="440" fill="#FAFBFD"/>
+
+  <!-- 标题 -->
+  <text x="400" y="36" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">地图产品部 · 产品体验设计中心组织架构</text>
+
+  <!-- ====== 根节点 ====== -->
+  <rect x="30" y="208" width="100" height="40" rx="6" fill="#0052D9"/>
+  <text x="80" y="233" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">地图产品部</text>
+
+  <!-- 根→设计中心 连接线 -->
+  <path d="M130 228 L170 228 L170 98 L210 98" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+
+  <!-- ====== 产品体验设计中心 ====== -->
+  <rect x="210" y="73" width="380" height="50" rx="6" fill="#0052D9"/>
+  <text x="226" y="95" fill="#FFFFFF" font-size="13" font-weight="700">产品体验设计中心</text>
+  <text x="226" y="113" fill="#B8D4FF" font-size="10">46人 · 负责人 kentezeng(曾智玮)</text>
+
+  <!-- 职责（框外右侧，精简重点） -->
+  <text x="600" y="88" fill="#2671E8" font-size="10" font-weight="600">→ 大出行业务</text>
+  <text x="600" y="104" fill="#7A8899" font-size="9">体验设计 / 产品进化 / 品质打磨</text>
+
+  <!-- ====== 产品设计一组 27人 ====== -->
+  <rect x="210" y="133" width="380" height="48" rx="5" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+  <rect x="210" y="133" width="4" height="48" rx="2" fill="#2671E8"/>
+  <text x="224" y="153" fill="#1A1A1A" font-size="11" font-weight="600">产品设计一组</text>
+  <text x="310" y="153" fill="#2671E8" font-size="10" font-weight="600">27人</text>
+  <text x="354" y="153" fill="#5A6A7A" font-size="9">负责人 kentezeng(曾智玮)</text>
+  <text x="224" y="171" fill="#7A8899" font-size="9">地图App平台 / 底图 / 驾车 / 公共出行</text>
+  <!-- 服务产品（框外） -->
+  <text x="600" y="149" fill="#2671E8" font-size="10" font-weight="600">→ ToC 地图核心</text>
+  <text x="600" y="163" fill="#2671E8" font-size="10" font-weight="600">→ ToB 车图业务</text>
+  <text x="600" y="177" fill="#7A8899" font-size="9">NPS与用户研究</text>
+
+  <!-- ====== 产品设计二组 13人 ====== -->
+  <rect x="210" y="187" width="380" height="48" rx="5" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+  <rect x="210" y="187" width="4" height="48" rx="2" fill="#2671E8"/>
+  <text x="224" y="207" fill="#1A1A1A" font-size="11" font-weight="600">产品设计二组</text>
+  <text x="310" y="207" fill="#2671E8" font-size="10" font-weight="600">13人</text>
+  <text x="354" y="207" fill="#5A6A7A" font-size="9">负责人 kentezeng(曾智玮)</text>
+  <text x="224" y="225" fill="#7A8899" font-size="9">检索 / 信息服务</text>
+  <!-- 服务产品（框外） -->
+  <text x="600" y="207" fill="#2671E8" font-size="10" font-weight="600">→ 出行服务</text>
+  <text x="600" y="221" fill="#2671E8" font-size="10" font-weight="600">→ 乘车码</text>
+
+  <!-- ====== 产品设计三组 11人 ====== -->
+  <rect x="210" y="241" width="380" height="48" rx="5" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+  <rect x="210" y="241" width="4" height="48" rx="2" fill="#2671E8"/>
+  <text x="224" y="261" fill="#1A1A1A" font-size="11" font-weight="600">产品设计三组</text>
+  <text x="310" y="261" fill="#2671E8" font-size="10" font-weight="600">11人</text>
+  <text x="354" y="261" fill="#5A6A7A" font-size="9">负责人 kentezeng(曾智玮)</text>
+  <text x="224" y="279" fill="#7A8899" font-size="9">位置服务 / 大数据</text>
+  <!-- 服务产品（框外） -->
+  <text x="600" y="261" fill="#2671E8" font-size="10" font-weight="600">→ 智慧出行</text>
+  <text x="600" y="275" fill="#2671E8" font-size="10" font-weight="600">→ 手图运营 &amp; 品牌</text>
+
+  <!-- 左侧树形连接线 -->
+  <path d="M204 157 L204 265" stroke="#C0D0E0" stroke-width="1" fill="none"/>
+  <line x1="204" y1="157" x2="210" y2="157" stroke="#C0D0E0" stroke-width="1"/>
+  <line x1="204" y1="211" x2="210" y2="211" stroke="#C0D0E0" stroke-width="1"/>
+  <line x1="204" y1="265" x2="210" y2="265" stroke="#C0D0E0" stroke-width="1"/>
+
+  <!-- 图例 -->
+  <g transform="translate(210, 320)">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+    <text x="16" y="9" fill="#7A8899" font-size="9">负责具体产品线</text>
+  </g>
+</svg>
