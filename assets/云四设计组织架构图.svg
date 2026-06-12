@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 830" width="1060" height="830">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830 830" width="830" height="830">
   <defs>
     <style>
       text { font-family: 'TencentSans', '腾讯体', 'PingFang SC', sans-serif; }
@@ -9,7 +9,7 @@
   <rect width="1060" height="830" fill="#FAFBFD"/>
 
   <!-- 标题 -->
-  <text x="400" y="36" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">云产品四部 · 设计组织架构</text>
+  <text x="415" y="36" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">云产品四部 · 设计组织架构</text>
 
   <!-- ====== 根节点 ====== -->
   <rect x="24" y="268" width="110" height="40" rx="6" fill="#0052D9"/>
