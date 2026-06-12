@@ -1,173 +1,153 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1300" width="1100" height="1300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 720" width="1060" height="720">
   <defs>
     <style>
       text { font-family: 'TencentSans', '腾讯体', 'PingFang SC', sans-serif; }
-      .title { fill: #1A1A1A; font-size: 20px; font-weight: 700; }
-      .center-title { fill: #0052D9; font-size: 14px; font-weight: 700; }
-      .center-info { fill: #7A8899; font-size: 10px; }
-      .center-desc { fill: #8E99A8; font-size: 9px; }
-      .team-name { fill: #1A1A1A; font-size: 11px; font-weight: 600; }
-      .team-detail { fill: #7A8899; font-size: 9px; }
-      .team-count { fill: #2671E8; font-size: 10px; font-weight: 600; }
-      .root-name { fill: #FFFFFF; font-size: 14px; font-weight: 700; }
-      .line { stroke: #D4DAE5; stroke-width: 1.5; fill: none; }
     </style>
   </defs>
 
   <!-- 背景 -->
-  <rect width="1100" height="1300" fill="#FAFBFD"/>
+  <rect width="1060" height="720" fill="#FAFBFD" rx="0"/>
 
   <!-- 标题 -->
-  <text x="550" y="40" text-anchor="middle" class="title">云产品四部 · 设计组织架构</text>
+  <text x="530" y="36" text-anchor="middle" fill="#1A1A1A" font-size="18" font-weight="700">云产品四部 · 设计组织架构</text>
 
-  <!-- ====== 根节点：云产品四部 ====== -->
-  <rect x="30" y="610" width="120" height="44" rx="6" fill="#0052D9"/>
-  <text x="90" y="637" text-anchor="middle" class="root-name">云产品四部</text>
+  <!-- ====== 根节点 ====== -->
+  <rect x="24" y="320" width="110" height="40" rx="6" fill="#0052D9"/>
+  <text x="79" y="345" text-anchor="middle" fill="#FFFFFF" font-size="13" font-weight="700">云产品四部</text>
 
-  <!-- 连接线：根 → 一中心 / 二中心 -->
-  <path d="M150 632 L210 632 L210 140" class="line"/>
-  <path d="M150 632 L210 760 L210 720" class="line"/>
+  <!-- 根→一中心 连接线 -->
+  <path d="M134 340 L170 340 L170 80 L210 80" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
+  <!-- 根→二中心 连接线 -->
+  <path d="M134 340 L170 340 L170 400 L210 400" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
 
   <!-- ==================== 腾讯云设计一中心 ==================== -->
-  <g transform="translate(220, 70)">
+  <g>
     <!-- 中心卡片 -->
-    <rect x="0" y="0" width="280" height="80" rx="8" fill="#FFFFFF" stroke="#0052D9" stroke-width="1.5"/>
-    <rect x="0" y="0" width="280" height="32" rx="8" fill="#0052D9"/>
-    <rect x="0" y="24" width="280" height="8" fill="#0052D9"/>
-    <text x="140" y="22" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">腾讯云设计一中心</text>
-    <text x="14" y="50" class="center-info">82 人 · 负责人 sissiwu / 吴茜</text>
-    <text x="14" y="66" class="center-desc">聚焦基础&amp;平台产品与开发者用户体验，负责腾讯云官网平台与基础产品的体验设计与品牌设计，</text>
-    <text x="14" y="77" class="center-desc">以及基础与平台产品及主要 PaaS&amp;SaaS 相关产品的 UI 开发和设计效率工具研发</text>
+    <rect x="210" y="56" width="380" height="48" rx="6" fill="#0052D9"/>
+    <text x="226" y="77" fill="#FFFFFF" font-size="13" font-weight="700">腾讯云设计一中心</text>
+    <text x="226" y="95" fill="#B8D4FF" font-size="10">82人 · 负责人 sissiwu / 吴茜</text>
 
-    <!-- 连接线：一中心 → 各组 -->
-    <path d="M140 80 L140 105" class="line"/>
-    <path d="M140 105 L60 105 L60 115" class="line"/>
-    <path d="M140 105 L230 105 L230 115" class="line"/>
+    <!-- 职责说明（框外） -->
+    <text x="600" y="70" fill="#7A8899" font-size="9">聚焦基础&amp;平台产品与开发者用户体验</text>
+    <text x="600" y="82" fill="#7A8899" font-size="9">负责腾讯云官网平台与基础产品的体验设计与品牌设计</text>
+    <text x="600" y="94" fill="#7A8899" font-size="9">负责基础与平台产品及主要PaaS&amp;SaaS相关产品的UI开发与设计效率工具研发</text>
 
-    <!-- 设计一组 15人 -->
-    <g transform="translate(0, 118)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-      <text x="12" y="18" class="team-name">设计一组</text>
-      <text x="78" y="18" class="team-count">15人</text>
-      <text x="12" y="34" class="team-detail">视觉设计、交互设计</text>
-      <!-- 竖向连接线 -->
-      <path d="M60 46 L60 56 M230 46 L230 56" class="line"/>
-    </g>
+    <!-- 一中心→各组 连接线 -->
+    <path d="M400 104 L400 120 L400 128" stroke="#C0D0E0" stroke-width="1.5" fill="none"/>
 
-    <!-- 设计二组 21人 -->
-    <g transform="translate(0, 175)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-      <text x="12" y="18" class="team-name">设计二组</text>
-      <text x="78" y="18" class="team-count">21人</text>
-      <text x="12" y="34" class="team-detail">视觉设计、交互设计、产品体验设计</text>
-      <path d="M60 46 L60 56 M230 46 L230 56" class="line"/>
-    </g>
+    <!-- 设计一组 -->
+    <rect x="210" y="128" width="380" height="36" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="226" y="150" fill="#1A1A1A" font-size="11" font-weight="600">设计一组</text>
+    <text x="296" y="150" fill="#2671E8" font-size="10" font-weight="600">15人</text>
+    <text x="340" y="150" fill="#7A8899" font-size="9">视觉设计、交互设计</text>
 
-    <!-- 设计三组 13人（短卡片） -->
-    <g transform="translate(100, 232)">
-      <rect x="0" y="0" width="160" height="38" rx="6" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-      <text x="10" y="17" class="team-name">设计三组</text>
-      <text x="76" y="17" class="team-count">13人</text>
-      <text x="10" y="31" class="team-detail">云智团队人员</text>
-      <path d="M80 38 L80 48" class="line"/>
-    </g>
+    <!-- 设计二组 -->
+    <rect x="210" y="172" width="380" height="36" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="226" y="194" fill="#1A1A1A" font-size="11" font-weight="600">设计二组</text>
+    <text x="296" y="194" fill="#2671E8" font-size="10" font-weight="600">21人</text>
+    <text x="340" y="194" fill="#7A8899" font-size="9">视觉设计、交互设计、产品体验设计</text>
 
-    <!-- 设计四组 12人 -->
-    <g transform="translate(0, 289)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-      <text x="12" y="18" class="team-name">设计四组</text>
-      <text x="78" y="18" class="team-count">12人</text>
-      <text x="12" y="34" class="team-detail">视觉设计、交互设计、产品体验设计</text>
-      <path d="M60 46 L60 56 M230 46 L230 56" class="line"/>
-    </g>
+    <!-- 设计三组 -->
+    <rect x="210" y="216" width="380" height="36" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="226" y="238" fill="#1A1A1A" font-size="11" font-weight="600">设计三组</text>
+    <text x="296" y="238" fill="#2671E8" font-size="10" font-weight="600">13人</text>
+    <text x="340" y="238" fill="#7A8899" font-size="9">云智团队人员</text>
 
-    <!-- 设计五组 12人 -->
-    <g transform="translate(0, 346)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-      <text x="12" y="18" class="team-name">设计五组</text>
-      <text x="78" y="18" class="team-count">12人</text>
-      <text x="12" y="34" class="team-detail">视觉设计、交互设计、产品体验设计</text>
-      <path d="M60 46 L60 56 M230 46 L230 56" class="line"/>
-    </g>
+    <!-- 设计四组 -->
+    <rect x="210" y="260" width="380" height="36" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="226" y="282" fill="#1A1A1A" font-size="11" font-weight="600">设计四组</text>
+    <text x="296" y="282" fill="#2671E8" font-size="10" font-weight="600">12人</text>
+    <text x="340" y="282" fill="#7A8899" font-size="9">视觉设计、交互设计、产品体验设计</text>
 
-    <!-- 体验研发组 12人 -->
-    <g transform="translate(0, 403)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#EBF2FE" stroke="#8FB8FF" stroke-width="1"/>
-      <text x="12" y="18" class="team-name">体验研发组</text>
-      <text x="94" y="18" class="team-count">12人</text>
-      <text x="12" y="34" class="team-detail">前端开发、UI 开发、产品体验设计</text>
-    </g>
+    <!-- 设计五组 -->
+    <rect x="210" y="304" width="380" height="36" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="226" y="326" fill="#1A1A1A" font-size="11" font-weight="600">设计五组</text>
+    <text x="296" y="326" fill="#2671E8" font-size="10" font-weight="600">12人</text>
+    <text x="340" y="326" fill="#7A8899" font-size="9">视觉设计、交互设计、产品体验设计</text>
+
+    <!-- 体验研发组 -->
+    <rect x="210" y="348" width="380" height="36" rx="5" fill="#EBF2FE" stroke="#8FB8FF" stroke-width="1"/>
+    <text x="226" y="370" fill="#1A1A1A" font-size="11" font-weight="600">体验研发组</text>
+    <text x="306" y="370" fill="#2671E8" font-size="10" font-weight="600">12人</text>
+    <text x="350" y="370" fill="#7A8899" font-size="9">前端开发、UI开发、产品体验设计</text>
+
+    <!-- 左侧竖向连接线 -->
+    <line x1="210" y1="146" x2="204" y2="146" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="146" x2="204" y2="366" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="210" y1="366" x2="204" y2="366" stroke="#C0D0E0" stroke-width="1"/>
+    <!-- 各组连接短线 -->
+    <line x1="204" y1="146" x2="210" y2="146" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="190" x2="210" y2="190" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="234" x2="210" y2="234" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="278" x2="210" y2="278" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="322" x2="210" y2="322" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="366" x2="210" y2="366" stroke="#C0D0E0" stroke-width="1"/>
   </g>
 
   <!-- ==================== 腾讯云设计二中心 ==================== -->
-  <g transform="translate(220, 650)">
+  <g>
     <!-- 中心卡片 -->
-    <rect x="0" y="0" width="280" height="72" rx="8" fill="#FFFFFF" stroke="#0052D9" stroke-width="1.5"/>
-    <rect x="0" y="0" width="280" height="32" rx="8" fill="#0052D9"/>
-    <rect x="0" y="24" width="280" height="8" fill="#0052D9"/>
-    <text x="140" y="22" text-anchor="middle" fill="#FFFFFF" font-size="14" font-weight="700">腾讯云设计二中心</text>
-    <text x="14" y="48" class="center-info">91 人 · 负责人 jinjinliu / 刘晶晶</text>
-    <text x="14" y="64" class="center-desc">聚焦 PaaS、SaaS 类产品，负责相关产品的体验设计、商业化设计、品牌运营设计相关工作</text>
+    <rect x="210" y="410" width="380" height="48" rx="6" fill="#0052D9"/>
+    <text x="226" y="431" fill="#FFFFFF" font-size="13" font-weight="700">腾讯云设计二中心</text>
+    <text x="226" y="449" fill="#B8D4FF" font-size="10">91人 · 负责人 jinjinliu / 刘晶晶</text>
 
-    <!-- 连接线 -->
-    <path d="M140 72 L140 95" class="line"/>
-    <path d="M140 95 L60 95 L60 105" class="line"/>
-    <path d="M140 95 L230 95 L230 105" class="line"/>
+    <!-- 职责说明（框外） -->
+    <text x="600" y="424" fill="#7A8899" font-size="9">聚焦PaaS、SaaS类产品</text>
+    <text x="600" y="436" fill="#7A8899" font-size="9">负责相关产品的体验设计、商业化设计、品牌运营设计</text>
 
-    <!-- 设计一组 11人（短） -->
-    <g transform="translate(100, 108)">
-      <rect x="0" y="0" width="160" height="38" rx="6" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-      <text x="10" y="17" class="team-name">设计一组</text>
-      <text x="76" y="17" class="team-count">11人</text>
-      <text x="10" y="31" class="team-detail">云智团队人员</text>
-      <path d="M80 38 L80 48" class="line"/>
-    </g>
+    <!-- 设计一组 -->
+    <rect x="210" y="476" width="380" height="36" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="226" y="498" fill="#1A1A1A" font-size="11" font-weight="600">设计一组</text>
+    <text x="296" y="498" fill="#2671E8" font-size="10" font-weight="600">11人</text>
+    <text x="340" y="498" fill="#7A8899" font-size="9">云智团队人员</text>
 
-    <!-- 设计二组 34人 -->
-    <g transform="translate(0, 155)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-      <text x="12" y="18" class="team-name">设计二组</text>
-      <text x="78" y="18" class="team-count">34人</text>
-      <text x="12" y="34" class="team-detail">产品体验、视觉、交互、UI 开发</text>
-      <path d="M60 46 L60 56 M230 46 L230 56" class="line"/>
-    </g>
+    <!-- 设计二组 -->
+    <rect x="210" y="520" width="380" height="36" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="226" y="542" fill="#1A1A1A" font-size="11" font-weight="600">设计二组</text>
+    <text x="296" y="542" fill="#2671E8" font-size="10" font-weight="600">34人</text>
+    <text x="340" y="542" fill="#7A8899" font-size="9">产品体验、视觉、交互、UI开发</text>
 
-    <!-- 设计三组 25人 -->
-    <g transform="translate(0, 212)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-      <text x="12" y="18" class="team-name">设计三组</text>
-      <text x="78" y="18" class="team-count">25人</text>
-      <text x="12" y="34" class="team-detail">产品体验、视觉、交互设计</text>
-      <path d="M60 46 L60 56 M230 46 L230 56" class="line"/>
-    </g>
+    <!-- 设计三组 -->
+    <rect x="210" y="564" width="380" height="36" rx="5" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="226" y="586" fill="#1A1A1A" font-size="11" font-weight="600">设计三组</text>
+    <text x="296" y="586" fill="#2671E8" font-size="10" font-weight="600">25人</text>
+    <text x="340" y="586" fill="#7A8899" font-size="9">产品体验、视觉、交互设计</text>
 
-    <!-- 设计四组 10人 — 腾讯文档 -->
-    <g transform="translate(0, 269)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
-      <rect x="0" y="0" width="4" height="46" rx="2" fill="#2671E8"/>
-      <text x="14" y="18" class="team-name">设计四组</text>
-      <text x="80" y="18" class="team-count">10人</text>
-      <text x="14" y="33" class="team-detail">产品体验、视觉、交互设计</text>
-      <text x="180" y="33" fill="#2671E8" font-size="9" font-weight="600">📄 腾讯文档</text>
-      <path d="M60 46 L60 56 M230 46 L230 56" class="line"/>
-    </g>
+    <!-- 设计四组 — 腾讯文档 -->
+    <rect x="210" y="608" width="380" height="36" rx="5" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+    <rect x="210" y="608" width="4" height="36" rx="2" fill="#2671E8"/>
+    <text x="224" y="630" fill="#1A1A1A" font-size="11" font-weight="600">设计四组</text>
+    <text x="294" y="630" fill="#2671E8" font-size="10" font-weight="600">10人</text>
+    <text x="338" y="630" fill="#7A8899" font-size="9">产品体验、视觉、交互设计</text>
+    <!-- 服务产品（框外） -->
+    <text x="600" y="630" fill="#2671E8" font-size="10" font-weight="600">→ 腾讯文档</text>
 
-    <!-- 设计五组 13人 — ima -->
-    <g transform="translate(0, 326)">
-      <rect x="0" y="0" width="260" height="46" rx="6" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
-      <rect x="0" y="0" width="4" height="46" rx="2" fill="#2671E8"/>
-      <text x="14" y="18" class="team-name">设计五组</text>
-      <text x="80" y="18" class="team-count">13人</text>
-      <text x="14" y="33" class="team-detail">产品体验、视觉、交互设计</text>
-      <text x="180" y="33" fill="#2671E8" font-size="9" font-weight="600">🤖 ima</text>
-    </g>
+    <!-- 设计五组 — ima -->
+    <rect x="210" y="652" width="380" height="36" rx="5" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+    <rect x="210" y="652" width="4" height="36" rx="2" fill="#2671E8"/>
+    <text x="224" y="674" fill="#1A1A1A" font-size="11" font-weight="600">设计五组</text>
+    <text x="294" y="674" fill="#2671E8" font-size="10" font-weight="600">13人</text>
+    <text x="338" y="674" fill="#7A8899" font-size="9">产品体验、视觉、交互设计</text>
+    <!-- 服务产品（框外） -->
+    <text x="600" y="674" fill="#2671E8" font-size="10" font-weight="600">→ ima</text>
+
+    <!-- 左侧竖向连接线 -->
+    <line x1="210" y1="494" x2="204" y2="494" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="494" x2="204" y2="670" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="210" y1="670" x2="204" y2="670" stroke="#C0D0E0" stroke-width="1"/>
+    <!-- 各组连接短线 -->
+    <line x1="204" y1="494" x2="210" y2="494" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="538" x2="210" y2="538" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="582" x2="210" y2="582" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="626" x2="210" y2="626" stroke="#C0D0E0" stroke-width="1"/>
+    <line x1="204" y1="670" x2="210" y2="670" stroke="#C0D0E0" stroke-width="1"/>
   </g>
 
   <!-- 图例 -->
-  <g transform="translate(550, 1240)">
-    <rect x="0" y="0" width="12" height="12" rx="2" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
-    <text x="20" y="10" fill="#7A8899" font-size="9">负责具体产品线</text>
-    <rect x="120" y="0" width="12" height="12" rx="2" fill="#F0F5FF" stroke="#B8CFFF" stroke-width="1"/>
-    <text x="140" y="10" fill="#7A8899" font-size="9">通用设计能力组</text>
+  <g transform="translate(210, 705)">
+    <rect x="0" y="0" width="10" height="10" rx="2" fill="#E8F0FE" stroke="#5B9BF0" stroke-width="1"/>
+    <text x="16" y="9" fill="#7A8899" font-size="9">负责具体产品线</text>
+    <rect x="130" y="0" width="10" height="10" rx="2" fill="#F0F5FF" stroke="#C8DAF8" stroke-width="1"/>
+    <text x="146" y="9" fill="#7A8899" font-size="9">通用设计能力组</text>
   </g>
 </svg>
