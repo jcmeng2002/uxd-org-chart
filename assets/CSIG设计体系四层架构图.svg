@@ -33,7 +33,7 @@
 <text x="58" y="138" fill="#1A1A1A" font-size="12" font-weight="700">云产品四部 · 设计一中心 / 设计二中心</text>
 <text x="58" y="152" fill="#7A8899" font-size="9">173人 · 一中心：设计一/二/三/四/五组 · 体验研发组</text>
 <text x="58" y="164" fill="#7A8899" font-size="9">二中心：设计一/二/三/四/五组</text>
-<text x="58" y="180" fill="#3B7DD8" font-size="9">服务腾讯云、会议、ima、文档等产品</text>
+<text x="58" y="180" fill="#3B7DD8" font-size="9">服务腾讯云、ima、文档等产品</text>
 
 <rect x="505" y="120" width="451" height="86" rx="6" fill="#F6F9FF"/>
 <rect x="505" y="120" width="3" height="86" rx="1.5" fill="#0052D9"/>
@@ -54,7 +54,7 @@
 <rect x="505" y="214" width="3" height="86" rx="1.5" fill="#0052D9"/>
 <text x="519" y="232" fill="#1A1A1A" font-size="12" font-weight="700">元宝产品部 · 设计中心</text>
 <text x="519" y="246" fill="#7A8899" font-size="9">53人 · 设计一组 · 设计二组</text>
-<text x="519" y="274" fill="#3B7DD8" font-size="9">服务于整体元宝产品部</text>
+<text x="519" y="274" fill="#3B7DD8" font-size="9">服务于整体元宝产品部（含会议等）</text>
 
 <!-- 可能还有 -->
 <line x1="44" y1="340" x2="952" y2="340" stroke="#E0E6EE" stroke-width="0.5" stroke-dasharray="3,3"/>
